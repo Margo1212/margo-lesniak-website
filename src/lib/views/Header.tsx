@@ -1,69 +1,55 @@
-import Image from "next/image";
-import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
-import { Img } from "types/types";
-import { HeaderImage } from "@lib/assets/svg/HeaderImg";
+import { Rocket } from "@lib/assets/svg/Rocket-main";
+import { RocketMin } from "@lib/assets/svg/Rocket-min";
+import { Stars } from "@lib/assets/svg/Stars";
 import { Button } from "@lib/components/Button/Button";
+import { SocialMedia } from "@lib/components/SocialMedia/SocialMedia";
+import { Title } from "@lib/components/Title/Title";
+import Link from "next/link";
+import { useRef } from "react";
+import Image from "next/image";
 
 export const revalidate = 10;
-export type HeaderProps = {
-  homepage: any;
-};
+export type HeaderProps = {};
 
-export const Header = ({ homepage }: HeaderProps) => {
-  const images = homepage.header.images?.data?.map((image: Img) =>
-    image !== null ? image.attributes : null
-  );
-
-  const button = homepage.header.button;
-  const sizes = [
-    "col-span-3 row-span-5",
-    "col-span-2 row-span-3 col-start-4",
-    "col-span-2 row-span-2 col-start-4 row-start-4",
-  ];
+export const Header = ({}: HeaderProps) => {
   return (
-    <header className="relative flex flex-col-reverse mb-10 px-3 py-6 gap-5 justify-around  items-center w-full h-full bg-gradient-to-b from-dark-blue to-light-blue laptop:flex-row laptop:justify-between laptop:h-screen  desktop:py-0 desktop:px-20  desktop:h-[75.28089887640449vh]">
-      <div className="relative laptop:w-2/4 w-full h-full items-center laptop:items-start flex flex-col gap-y-10 justify-center ">
-        <HeaderImage position="up" />
-        <HeaderImage position="down" />
-
-        <h1 className="text-white text-center break-words laptop:text-left w-5/6 tracking-tight font-medium desktop:font-normal text-4xl tablet:text-5xl laptop:text-5xl">
-          {!homepage.header.title ? "No title founded" : homepage.header.title}
-        </h1>
-        <p className=" text-white text-center laptop:text-left font-thin text-sm">
-          {!homepage.header.description
-            ? "No title founded"
-            : homepage.header.description}
-        </p>
-        <Button
-          styles="w-[14.438rem] flex justify-between font-semibold"
-          href="/contact"
-          bg="light"
-          text={button.title}
-          icon={<ArrowForwardIcon />}
-        />
+    <header className="relative w-full px-5 scroll-smooth bg-main-bg flex flex-col-reverse items-center laptop:flex-row gap-y-7 laptop:gap-y-0  laptop:px-24 pt-10 pb-32">
+      <Stars position="up" />
+      <Stars position="down" />
+      <Link
+        className="absolute bottom-5 laptop:bottom-10 desktop:bottom-24 left-1/2 transform -translate-x-1/2 "
+        href="#about-section"
+      >
+        <RocketMin />
+      </Link>
+      <div className="w-full laptop:w-1/2 flex flex-col justify-center gap-y-16">
+        <div className="space-y-6 flex flex-col">
+          <p className="text-primary text-center laptop:text-left">
+            Label goes here
+          </p>
+          <Title>Twoja Strona, Moja Kosmiczna Historia</Title>
+          <p className="text-[#CCCCCC] text-lg text-center laptop:text-left font-light leading-6 tracking-wider laptop:pr-12">
+            Tworzę strony internetowe, które wyróżnią Cię w kosmicznej
+            przestrzeni online. Twoja firma zasługuje na projekt, który
+            przekracza granice.
+          </p>
+        </div>
+        <div className="laptop:space-x-5 space-y-5 laptop:space-y-0 flex flex-col laptop:flex-row ">
+          <Button styles="px-6 py-3" text="Order now" bg="secondary" href="#" />
+          <Button styles="px-6 py-3" text="Explore" bg="primary" href="#" />
+          <SocialMedia />
+        </div>
       </div>
-
-      <div className="relative laptop:mt-3 grid grid-cols-5 overflow-visible grid-rows-5 gap-2 tablet:gap-5  desktop:w-[35rem] desktop:h-[105%] desktop:mt-12 tablet:w-[30rem] tablet:h-[28rem] w-[279px] h-[267px]">
-        <div className="desktop:block laptop:hidden visible absolute border-4 border-white/10 w-[110%]  top-[45%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-[80%]"></div>
-        {images?.map((image: any, idx: number) => (
-          <div
-            data-aos="zoom-in"
-            key={idx}
-            className={`${sizes.filter((size, i) => i === idx)} w-full h-full`}
-          >
-            <Image
-              className="w-full object-cover h-full shadow-md"
-              loading="eager"
-              key={idx}
-              src={image.url}
-              alt={image.alternativeText}
-              width={image.width}
-              height={image.height}
-              sizes="(max-width: 1400px) 100vw, 1400px"
-              priority={true}
-            />
-          </div>
-        ))}
+      <div className="w-1/2 laptop:w-1/2 flex justify-center">
+        <div className="flex justify-end items-center">
+          <Image
+            className="w-full object-cover h-full laptop:w-3/4 desktop:w-full shadow-md"
+            src="Rocket.svg"
+            alt="Rocket"
+            width={472}
+            height={486}
+          />
+        </div>
       </div>
     </header>
   );

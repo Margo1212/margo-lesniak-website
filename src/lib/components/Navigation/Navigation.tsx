@@ -1,83 +1,63 @@
 import Link from "next/link";
-import Image from "next/image";
-
+import { Button } from "../Button/Button";
 import HamburgerMenu from "../HamburgerMenu/HamburgerMenu";
 import { Logo } from "@lib/assets/svg/Logo";
-import { SocialMedia } from "../SocialMedia/SocialMedia";
-export const revalidate = 10;
-export type NavProps = {
-  nav: any;
-};
+import { LogoMin } from "@lib/assets/svg/Logo-min";
 
-const Navigation = ({ nav }: NavProps) => {
+export const revalidate = 10;
+
+const Navigation = () => {
   return (
-    <nav className="w-full flex px-10 justify-between items-center bg-[#f8f8f8] text-dark-blue tablet:text-xs desktop:text-sm font-medium desktop:px-14">
-      <div className="tablet:h-20 tablet:w-24 w-14 h-12">
+    <nav className="w-full h-auto flex justify-between items-center bg-[#180022] laptop:text-xs desktop:text-sm font-medium px-10 py-2 laptop:py-3 laptop:px-24">
+      <div className="hidden h-full laptop:flex items-center">
         <Link aria-label="Link to homepage" href="/">
-          {nav.logo?.data !== undefined ? (
-            <Image
-              className="w-full h-full object-cover"
-              src={nav.logo?.data?.attributes.url}
-              alt={nav.logo?.data?.attributes.alternativeText}
-              width={nav.logo?.data?.attributes.width}
-              height={nav.logo?.data?.attributes.height}
-            />
-          ) : (
-            <Logo />
-          )}
+          <Logo />
+        </Link>
+      </div>
+      <div className="laptop:hidden  flex items-center">
+        <Link aria-label="Link to homepage" href="/">
+          <LogoMin />
         </Link>
       </div>
 
       <HamburgerMenu />
 
-      <ul className="hidden tablet:px-10 desktop:px-24 space-x-4 align-middle py-5 laptop:flex flex-row justify-between">
+      <ul className="hidden text-white font-medium  space-x-10 align-middle py-5 laptop:flex flex-row justify-between">
         <li>
-          <Link aria-label="Link to home page" href="/">
-            Strona główna
+          <Link aria-label="Link to home" href="/">
+            Strona Główna
           </Link>
         </li>
         <li>
           <Link aria-label="Link to about page" href="/about">
-            O nas
+            O mnie
           </Link>
         </li>
         <li>
-          <Link aria-label="Link to about services page" href="/about-services">
-            O usługach
+          <Link aria-label="Link to gallery" href="/offer">
+            Oferta
           </Link>
         </li>
         <li>
-          <Link aria-label="Link to gallery" href="/gallery">
-            Galeria
+          <Link aria-label="Link to news page" href="#">
+            Blog
           </Link>
         </li>
         <li>
-          <Link aria-label="Link to price-list" href="/price-list">
-            Cennik
+          <Link aria-label="Link to news page" href="#">
+            Projekty
           </Link>
         </li>
+
         <li>
-          <Link aria-label="Link to products page" href="/products">
-            Produkty
-          </Link>
-        </li>
-        <li>
-          <Link aria-label="Link to news page" href="/news">
-            Nowośći
-          </Link>
-        </li>
-        <li>
-          <Link aria-label="Link to vouchers page" href="/vouchers">
-            <p className="text-wrapper">Bony podarunkowe</p>
-          </Link>
-        </li>
-        <li>
-          <Link aria-label="Link to contact page" href="/contact">
-            Kontakt
-          </Link>
+          <Button
+            styles="py-3 px-7"
+            text="Skontaktuj się ze mną"
+            bg="secondary"
+            href="#"
+          />
         </li>
       </ul>
-      <SocialMedia isVisibleOnTablet={false} color="dark" />
     </nav>
   );
 };

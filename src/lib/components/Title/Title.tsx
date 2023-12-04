@@ -1,5 +1,4 @@
 import type { ComponentProps } from "react";
-import { Line } from "@lib/assets/svg/Line";
 
 type Props = ComponentProps<"h2"> & {
   children: string;
@@ -7,13 +6,8 @@ type Props = ComponentProps<"h2"> & {
 
 export const Title = ({ children }: Props) => {
   return (
-    <div className="flex flex-col items-center justify-center">
-      <h2 className="text-[#001965] text-4xl text-center tablet:text-4xl italic">
-        {children}
-      </h2>
-      <span className="mt-2 w-full flex justify-center">
-        <Line />
-      </span>
-    </div>
+    <h2 className="text-white leading-10 text-center laptop:text-left font-bold text-3xl tablet:text-5xl desktop:text-6xl ">
+      {children}
+    </h2>
   );
 };

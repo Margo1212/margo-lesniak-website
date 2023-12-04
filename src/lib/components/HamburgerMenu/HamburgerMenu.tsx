@@ -6,9 +6,7 @@ const Box = dynamic(() => import("@mui/material/Box"), {
 const Drawer = dynamic(() => import("@mui/material/Drawer"), {
   loading: () => <p>Loading...</p>,
 });
-const Divider = dynamic(() => import("@mui/material/Divider"), {
-  loading: () => <p>Loading...</p>,
-});
+
 import * as React from "react";
 
 import { useState } from "react";
@@ -16,8 +14,6 @@ import { IconButton } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import Link from "next/link";
-import { Instagram } from "@lib/assets/svg/Instagram";
-import { Booksy } from "@lib/assets/svg/Booksy";
 
 export default function HamburgerMenu() {
   const [state, setState] = useState(false);
@@ -43,9 +39,10 @@ export default function HamburgerMenu() {
         onClick={toggleDrawer(true)}
         sx={{
           m: 0,
+          p: 0,
         }}
       >
-        <MenuIcon />
+        <MenuIcon sx={{ color: "#CC08F2" }} />
       </IconButton>
 
       <Drawer anchor="right" open={state} onClose={toggleDrawer(false)}>
@@ -58,8 +55,6 @@ export default function HamburgerMenu() {
           <IconButton onClick={toggleDrawer(false)} sx={{ mb: 2 }}>
             <CloseIcon />
           </IconButton>
-
-          <Divider sx={{ mb: 2 }} />
 
           <Box sx={{ mb: 2, px: "10px" }}>
             <ul className=" space-y-2 align-middle font-medium py-6 flex flex-col justify-between">
@@ -91,26 +86,6 @@ export default function HamburgerMenu() {
               </li>
               <li>
                 <Link href="/contact">Kontakt</Link>
-              </li>
-            </ul>
-            <ul className="flex space-x-2 ">
-              <li>
-                <Link
-                  href={"https://www.instagram.com/art.lady_clinic/"}
-                  target="_blank"
-                >
-                  <Instagram />
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href={
-                    "https://booksy.com/pl-pl/81163_art-lady_brwi-i-rzesy_8820_krakow#ba_s=sr_1"
-                  }
-                  target="_blank"
-                >
-                  <Booksy />
-                </Link>
               </li>
             </ul>
           </Box>
