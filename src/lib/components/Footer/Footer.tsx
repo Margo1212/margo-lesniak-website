@@ -1,10 +1,6 @@
-import { Email } from "@lib/assets/svg/Email";
-import { Local } from "@lib/assets/svg/Local";
-import { Phone } from "@lib/assets/svg/Phone";
 import Link from "next/link";
 import { Category } from "types/types";
 import { SocialMedia } from "../SocialMedia/SocialMedia";
-import { OpeningHours } from "../OpeningHours/OpeningHours";
 
 export type FooterProps = {
   categories: Category[];
@@ -20,40 +16,9 @@ export const Footer = ({ categories, contact }: FooterProps) => {
         <h3 className="text-white text-3xl text-medium italic">
           ArtLadyClinic
         </h3>
-        <SocialMedia isVisibleOnTablet={true} color="light" />
+        <SocialMedia />
       </div>
-      <div className="laptop:hidden py-6 space-y-2 w-full h-full tablet:flex flex-col justify-center gap-y-2 gap-x-7">
-        <div className="flex items-center gap-x-6">
-          <span className="invert brightness-0">
-            <Email />
-          </span>
-          <p className="text-xs text-white">{contact.contactInfo?.email}</p>
-        </div>
-        <div className="flex items-center gap-x-6">
-          <span className="invert brightness-0">
-            <Phone />
-          </span>
-          <p className="text-xs text-white">{contact.contactInfo?.phone}</p>
-        </div>
-        <div className="flex items-center gap-x-6">
-          <span className="invert brightness-0">
-            <Local />
-          </span>
-          <p className="text-xs text-white">{contact.contactInfo?.address}</p>
-        </div>
-      </div>
-      <div className="hidden py-6 px-10 w-full laptop:flex flex-col gap-y-2">
-        <p className="text-base font-medium text-white">Usługi</p>
-        {categories?.map((category: Category) => (
-          <Link
-            key={category.id}
-            aria-label="Link to price-list page"
-            href="/price-list"
-          >
-            <p className="text-white text-xs">{category.name}</p>
-          </Link>
-        ))}
-      </div>
+
       <div className="hidden laptop:flex py-6 px-10 w-full flex-col gap-y-2">
         <p className="text-base font-medium text-white">Nawigacja</p>
         <ul className="flex flex-col text-xs gap-2 text-white">
@@ -85,13 +50,7 @@ export const Footer = ({ categories, contact }: FooterProps) => {
           </li>
         </ul>
       </div>
-      <div className="hidden laptop:flex py-6 px-10 w-full flex-col gap-y-2">
-        <OpeningHours
-          colorOfDays="light"
-          hours={contact.openingHours?.hours}
-          color="light"
-        />
-      </div>
+
       <div className="w-full border-t-[1px] py-5 border-white tablet:col-span-2 laptop:col-span-4 flex flex-col gap-3 mt-4">
         <p className="text-white text-xs text-center">
           All rights reserved © Marharyta Lesniak
