@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
-import { DM_Sans } from "next/font/google";
+import { Lato } from "next/font/google";
 import "../styles/globals.css";
 import Navigation from "@lib/components/Navigation/Navigation";
+import { Footer } from "@lib/components/Footer/Footer";
 
-const dmsans = DM_Sans({
-  weight: ["100", "200", "300", "400", "500", "600", "700"],
+const lato = Lato({
+  weight: ["100", "300", "400", "700"],
   subsets: ["latin"],
 });
 
@@ -28,10 +29,10 @@ export default function RootLayout({
           async
         ></script>
       </head>
-      <body className={dmsans.className}>
+      <body className={lato.className}>
         <Navigation />
         {children}
-        {/* <Footer categories={categories} contact={contact} /> */}
+        <Footer />
       </body>
     </html>
   );

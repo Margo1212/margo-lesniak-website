@@ -15,9 +15,9 @@ const config: Config = {
       desktop: "1280px",
     },
     colors: {
-      "main-bg": "#180022",
-      white: "#fff",
-      primary: "#EE0CF2",
+      "main-bg": "#1D2127",
+      white: "#D1D7E0",
+      primary: "#6F00FF",
       secondary: "#36FFB5",
     },
     extend: {},

@@ -12,22 +12,22 @@ export const SocialMedia = ({}: SocialMediaProps) => {
     <ul className={` space-x-5 flex justify-center items-center`}>
       <li>
         <Link
-          className="w-10 h-10 flex justify-center items-center  border-2 border-primary rounded-full"
+          className="w-8 h-8 flex justify-center items-center  border-2 border-primary rounded-full"
           aria-label="Link to instagram"
           href={"https://www.instagram.com/art.lady_clinic/"}
           target="_blank"
         >
           <GitHubIcon
             sx={{
-              color: " rgba(238, 12, 242, 1)",
-              fontSize: 25,
+              color: "rgba(111, 0, 255, 1)",
+              fontSize: 16,
             }}
           />
         </Link>
       </li>
       <li>
         <Link
-          className="w-10 h-10 flex justify-center items-center  border-2 border-primary rounded-full"
+          className="w-8 h-8 flex justify-center items-center  border-2 border-primary rounded-full"
           aria-label="Link to booksy"
           href={
             "https://booksy.com/pl-pl/81163_art-lady_brwi-i-rzesy_8820_krakow#ba_s=sr_1"
@@ -36,8 +36,8 @@ export const SocialMedia = ({}: SocialMediaProps) => {
         >
           <LinkedInIcon
             sx={{
-              color: " rgba(238, 12, 242, 1)",
-              fontSize: 25,
+              color: " rgba(111, 0, 255, 1)",
+              fontSize: 16,
               borderRadius: "100%",
             }}
           />
@@ -45,15 +45,15 @@ export const SocialMedia = ({}: SocialMediaProps) => {
       </li>
       <li>
         <Link
-          className="w-10 h-10 flex justify-center items-center  border-2 border-primary rounded-full"
+          className="w-8 h-8 flex justify-center items-center  border-2 border-primary rounded-full"
           aria-label="Link to instagram"
           href={"https://www.instagram.com/art.lady_clinic/"}
           target="_blank"
         >
           <InstagramIcon
             sx={{
-              color: " rgba(238, 12, 242, 1)",
-              fontSize: 25,
+              color: " rgba(111, 0, 255, 1)",
+              fontSize: 16,
             }}
           />
         </Link>
