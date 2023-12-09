@@ -10,7 +10,7 @@ export const ServicesSection = () => {
     <section className="relative bg-main-bg flex flex-col laptop:py-14 items-center justify-center gap-y-20 px-5 laptop:px-24">
       <ServiceSection1 />
       <ServiceSection2 />
-      <div className="text-center space-y-5">
+      <div className="text-center  space-y-5">
         <h2 className="text-4xl text-white font-medium">
           Co mogę dla Ciebie zrobić
         </h2>
@@ -21,7 +21,7 @@ export const ServicesSection = () => {
       </div>
 
       <div className="w-full grid tablet:grid-cols-2 gap-y-4 laptop:grid-cols-4 gap-x-5">
-        <div className="border-[1px] border-white/10 bg-[#12001A] text-white/80 min-h-[429px] p-8 flex flex-col items-center gap-y-5">
+        <div className="  text-white min-h-[429px] p-8 flex flex-col items-center gap-y-5 shadow-xl rounded-md bg-[#26272D]">
           <div className="text-primary">
             <Image
               alt="service-1"
@@ -30,7 +30,9 @@ export const ServicesSection = () => {
               height={75}
             />
           </div>
-          <h3 className="text-xl font-bold">Tworzenie Stron Internetowych</h3>
+          <h3 className="text-xl text-center font-bold">
+            Tworzenie Stron Internetowych
+          </h3>
           <ul className="list-image-[url(../../public/star.svg)] space-y-4 list-inside text-base">
             <li>
               Projektowanie i rozwijanie responsywnych stron internetowych.
@@ -38,7 +40,7 @@ export const ServicesSection = () => {
             <li> Tworzenie stron korporacyjnych, portfolio, blogów..</li>
           </ul>
         </div>
-        <div className="border-[1px] border-white/10 bg-[#12001A] text-white/80 min-h-[429px] p-8 flex flex-col items-center gap-y-5">
+        <div className="shadow-xl rounded-md bg-[#26272D] text-white min-h-[429px] p-8 flex flex-col items-center gap-y-5">
           <div className="text-primary">
             <Image
               alt="service-2"
@@ -47,7 +49,9 @@ export const ServicesSection = () => {
               height={75}
             />
           </div>
-          <h3 className="text-xl font-bold">Strony oparte na CMS</h3>
+          <h3 className="text-xl text-center font-bold">
+            Strony oparte na CMS
+          </h3>
           <ul className="list-image-[url(../../public/star.svg)] space-y-4 list-inside text-base">
             <li>
               Konfiguracja i dostosowywanie systemów zarządzania treścią (CMS),
@@ -58,7 +62,7 @@ export const ServicesSection = () => {
             </li>
           </ul>
         </div>
-        <div className="border-[1px] border-white/10 bg-[#12001A] text-white/80 min-h-[429px] p-8 flex flex-col items-center gap-y-5">
+        <div className="shadow-xl rounded-md bg-[#26272D] text-white  min-h-[429px] p-8 flex flex-col items-center gap-y-5">
           <div className="text-primary">
             <Image
               alt="service-3"
@@ -67,13 +71,13 @@ export const ServicesSection = () => {
               height={75}
             />
           </div>
-          <h3 className="text-xl font-bold">Dostosowanie do SEO</h3>
+          <h3 className="text-xl font-bold text-center">Dostosowanie do SEO</h3>
           <ul className="list-image-[url(../../public/star.svg)] space-y-4 list-inside text-base">
             <li>Optymalizacja treści pod kątem wyszukiwarek internetowych.</li>
             <li>Implementacja tagów meta, mapy witryny itp.</li>
           </ul>
         </div>
-        <div className="border-[1px] border-white/10 bg-[#12001A] text-white/80 min-h-[429px] p-8 flex flex-col items-center gap-y-5">
+        <div className="shadow-xl rounded-md bg-[#26272D] text-white  min-h-[429px] p-8 flex flex-col items-center gap-y-5">
           <div className="text-primary">
             <Image
               alt="service-4"
@@ -82,7 +86,9 @@ export const ServicesSection = () => {
               height={75}
             />
           </div>
-          <h3 className="text-xl font-bold">Wsparcie Techniczne</h3>
+          <h3 className="w-full text-xl font-bold text-center">
+            Wsparcie Techniczne
+          </h3>
           <ul className="list-image-[url(../../public/star.svg)] list-inside space-y-4 text-base">
             <li>Konsultacje dotyczące technologii internetowych.</li>
             <li>

@@ -25,7 +25,7 @@ export const AboutSection = () => {
       </div>
       <div className="laptop:w-2/3 w-full flex flex-col laptop:items-start items-center justify-center  py-5 laptop:py-2 desktop:py-8 px-4 laptop:px-7 space-y-8">
         <h2 className="text-4xl text-white font-medium">O mnie</h2>
-        <p className="text-sm text-center laptop:text-left text-white break-words font-light leading-relaxed">
+        <p className="text-md text-center laptop:text-left text-[#AAAEB6] break-words font-normal leading-relaxed">
           Witaj na mojej stronie! Jestem pasjonatką web developmentu, która z
           fascynacją i zapałem poznaje tajniki tworzenia nowoczesnych i
           innowacyjnych stron internetowych. Uczę się sztuki web developmentu od
