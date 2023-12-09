@@ -15,7 +15,7 @@ export const Footer = () => {
         </div>
 
         <div className="hidden col-span-3 laptop:flex py-3 px-10 w-full flex-col gap-y-2">
-          <ul className="hidden text-white font-medium  space-x-10 align-middle pt-5 laptop:flex flex-row justify-between">
+          <ul className=" text-white font-medium  space-x-10 align-middle pt-5 laptop:flex flex-row justify-between">
             <li>
               <Link aria-label="Link to home" href="/">
                 Strona Główna

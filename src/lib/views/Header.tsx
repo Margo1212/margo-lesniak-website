@@ -13,7 +13,7 @@ export type HeaderProps = {};
 
 export const Header = ({}: HeaderProps) => {
   return (
-    <header className="relative w-full px-5 scroll-smooth bg-main-bg flex flex-col-reverse items-center laptop:flex-row gap-y-7 laptop:gap-y-0  laptop:px-24 pt-10 pb-32">
+    <header className="relative w-full px-5 scroll-smooth bg-main-bg flex flex-col-reverse items-center laptop:flex-row gap-y-5 laptop:gap-y-0  laptop:px-24 pt-10 pb-32">
       <Stars position="down" />
       <Link
         className="absolute bottom-5 laptop:bottom-10 desktop:bottom-10 left-1/2 transform -translate-x-1/2 "
@@ -21,13 +21,13 @@ export const Header = ({}: HeaderProps) => {
       >
         <RocketMin />
       </Link>
-      <div className="w-full laptop:w-1/2 flex flex-col justify-center gap-y-16">
-        <div className="space-y-6 flex flex-col">
+      <div className="w-full laptop:w-1/2 flex flex-col justify-center gap-y-10 laptop:gap-y-16">
+        <div className="space-y-3 laptop:space-y-6 flex flex-col">
           <p className="text-primary text-center laptop:text-left">
             Label goes here
           </p>
           <Title>Web Development w Harmonii z Twoimi Oczekiwaniami</Title>
-          <p className="text-[#AAAEB6] text-lg text-center laptop:text-left font-normal leading-6 tracking-wider laptop:pr-12">
+          <p className="text-[#AAAEB6] text-base laptop:text-lg text-center laptop:text-left font-normal leading-6 tracking-wider laptop:pr-12">
             Tworzę strony internetowe, które wyróżnią Cię w kosmicznej
             przestrzeni online. Twoja firma zasługuje na projekt, który
             przekracza granice.
