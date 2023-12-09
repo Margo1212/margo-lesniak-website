@@ -8,7 +8,7 @@ export const revalidate = 10;
 
 const Navigation = () => {
   return (
-    <nav className="w-full h-auto flex justify-between items-center bg-[#180022] laptop:text-xs desktop:text-sm font-medium px-10 py-2 laptop:py-3 laptop:px-24">
+    <nav className="w-full h-auto flex justify-between items-center bg-main-bg laptop:text-xs desktop:text-sm font-medium px-10 py-2 laptop:py-3 laptop:px-24">
       <div className="hidden h-full laptop:flex items-center">
         <Link aria-label="Link to homepage" href="/">
           <Logo />
@@ -22,7 +22,7 @@ const Navigation = () => {
 
       <HamburgerMenu />
 
-      <ul className="hidden text-white font-medium  space-x-10 align-middle py-5 laptop:flex flex-row justify-between">
+      <ul className="hidden text-white font-normal  space-x-10 align-middle py-5 laptop:flex flex-row justify-between tracking-wide">
         <li>
           <Link aria-label="Link to home" href="/">
             Strona Główna
