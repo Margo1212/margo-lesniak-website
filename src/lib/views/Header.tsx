@@ -14,10 +14,9 @@ export type HeaderProps = {};
 export const Header = ({}: HeaderProps) => {
   return (
     <header className="relative w-full px-5 scroll-smooth bg-main-bg flex flex-col-reverse items-center laptop:flex-row gap-y-7 laptop:gap-y-0  laptop:px-24 pt-10 pb-32">
-      <Stars position="up" />
       <Stars position="down" />
       <Link
-        className="absolute bottom-5 laptop:bottom-10 desktop:bottom-24 left-1/2 transform -translate-x-1/2 "
+        className="absolute bottom-5 laptop:bottom-10 desktop:bottom-10 left-1/2 transform -translate-x-1/2 "
         href="#about-section"
       >
         <RocketMin />
@@ -27,8 +26,8 @@ export const Header = ({}: HeaderProps) => {
           <p className="text-primary text-center laptop:text-left">
             Label goes here
           </p>
-          <Title>Twoja Strona, Moja Kosmiczna Historia</Title>
-          <p className="text-[#CCCCCC] text-lg text-center laptop:text-left font-light leading-6 tracking-wider laptop:pr-12">
+          <Title>Web Development w Harmonii z Twoimi Oczekiwaniami</Title>
+          <p className="text-[#AAAEB6] text-lg text-center laptop:text-left font-normal leading-6 tracking-wider laptop:pr-12">
             Tworzę strony internetowe, które wyróżnią Cię w kosmicznej
             przestrzeni online. Twoja firma zasługuje na projekt, który
             przekracza granice.
@@ -43,11 +42,11 @@ export const Header = ({}: HeaderProps) => {
       <div className="w-1/2 laptop:w-1/2 flex justify-center">
         <div className="flex justify-end items-center">
           <Image
-            className="w-full object-cover h-full laptop:w-3/4 desktop:w-full shadow-md"
-            src="Rocket.svg"
-            alt="Rocket"
-            width={472}
-            height={486}
+            className="w-full object-cover h-full laptop:w-3/4 desktop:w-full"
+            src="woman.svg"
+            alt="woman"
+            width={450}
+            height={464}
           />
         </div>
       </div>

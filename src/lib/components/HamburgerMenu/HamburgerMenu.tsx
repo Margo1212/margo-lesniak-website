@@ -57,35 +57,31 @@ export default function HamburgerMenu() {
           </IconButton>
 
           <Box sx={{ mb: 2, px: "10px" }}>
-            <ul className=" space-y-2 align-middle font-medium py-6 flex flex-col justify-between">
+            <ul className="hidden text-white font-medium  space-x-10 align-middle py-5 laptop:flex flex-row justify-between">
               <li>
-                <Link href="/">Strona główna</Link>
-              </li>
-              <li>
-                <Link href="/about">O nas</Link>
-              </li>
-              <li>
-                <Link href="/about-services">O usługach</Link>
-              </li>
-              <li>
-                <Link href="/gallery">Galeria</Link>
-              </li>
-              <li>
-                <Link href="/price-list">Cennik</Link>
-              </li>
-              <li>
-                <Link href="/products">Produkty</Link>
-              </li>
-              <li>
-                <Link href="/news">Nowośći</Link>
-              </li>
-              <li>
-                <Link href="/vouchers">
-                  <p className="text-wrapper">Bony podarunkowe</p>
+                <Link aria-label="Link to home" href="/">
+                  Strona Główna
                 </Link>
               </li>
               <li>
-                <Link href="/contact">Kontakt</Link>
+                <Link aria-label="Link to about page" href="/about">
+                  O mnie
+                </Link>
+              </li>
+              <li>
+                <Link aria-label="Link to gallery" href="/offer">
+                  Oferta
+                </Link>
+              </li>
+              <li>
+                <Link aria-label="Link to news page" href="#">
+                  Blog
+                </Link>
+              </li>
+              <li>
+                <Link aria-label="Link to news page" href="#">
+                  Projekty
+                </Link>
               </li>
             </ul>
           </Box>
