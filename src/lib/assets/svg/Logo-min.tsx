@@ -9,7 +9,7 @@ export const LogoMin = () => {
       xmlns="http://www.w3.org/2000/svg"
     >
       <g filter="url(#filter0_i_3_18)">
-        <rect width="61" height="61" rx="29.902" fill="#FB00FF" />
+        <rect width="61" height="61" rx="29.902" fill="rgba(111, 0, 255, 1)" />
         <path
           d="M28.6115 16H18.6064C17.0994 16 15.8778 17.1559 15.8778 18.5819V36.6556H44.9833V27.1884"
           stroke="white"

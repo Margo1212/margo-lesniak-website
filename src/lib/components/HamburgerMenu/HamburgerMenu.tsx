@@ -42,7 +42,7 @@ export default function HamburgerMenu() {
           p: 0,
         }}
       >
-        <MenuIcon sx={{ color: "#CC08F2" }} />
+        <MenuIcon sx={{ color: "rgba(111, 0, 255, 1)" }} />
       </IconButton>
 
       <Drawer anchor="right" open={state} onClose={toggleDrawer(false)}>
