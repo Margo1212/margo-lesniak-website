@@ -6,7 +6,6 @@ import Typography from "@mui/material/Typography/Typography"
 import AccordionDetails from "@mui/material/AccordionDetails/AccordionDetails"
 
 export const FaqSection = () => {
-    console.log(faq.faq)
     return (
         <section className="relative bg-main-bg flex flex-col laptop:py-14 items-center justify-center px-3 gap-y-5 py-20">
       
