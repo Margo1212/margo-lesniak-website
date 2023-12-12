@@ -1,6 +1,6 @@
 import {faq } from "../data/faq"
 import Accordion from "@mui/material/Accordion/Accordion"
-import AddIcon from "@mui/icons-material/Add";
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import AccordionSummary from "@mui/material/AccordionSummary/AccordionSummary"
 import Typography from "@mui/material/Typography/Typography"
 import AccordionDetails from "@mui/material/AccordionDetails/AccordionDetails"
@@ -20,26 +20,31 @@ export const FaqSection = () => {
               key={i}
               sx={{
                 marginBottom: "25px",
-                backgroundColor: "#26272D",
-                borderBottom: "solid 1px #6F00FF",
+                backgroundColor: '#21262d',
+                boxShadow: '6px 6px 12px #191c21, -6px -6px 12px #21262d',
+                borderBottom: "solid 0.5px #6F00FF",
+                overflow: 'hidden'
               }}
             >
               <AccordionSummary
+                
                 expandIcon={
-                  <AddIcon sx={{ color: "#6F00FF", marginLeft: "2px" }} />
+                  <ExpandMoreIcon sx={{ color: "#6F00FF", marginLeft: "2px" }} />
                 }
                 aria-controls="panel2a-content"
                 id="panel2a-header"
               >
                 <p className="font-normal text-white">{question.question}</p>
               </AccordionSummary>
-              <AccordionDetails>
+              <AccordionDetails >
                 <Typography
                   sx={{
+                    fontFamily: 'Lato, sans-serif',
                     paddingLeft: "20px",
-                    borderLeft: "solid 4px #00FFA2",
+                    borderLeft: "solid 2px #00FFA2",
                               fontSize: "14px",
-                              color: "#fff",
+                    color: "#AAAEB6",
+                              letterSpacing: '0.6px',
                     fontWeight: "100"
                   }}
                 >
