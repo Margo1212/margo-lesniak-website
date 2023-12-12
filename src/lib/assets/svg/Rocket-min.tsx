@@ -21,8 +21,8 @@ export const RocketMin = () => {
           y2="14.499"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#00CE83" />
-          <stop offset="1" stopColor="#00FFA2" />
+          <stop stopColor="#05A66B" />
+          <stop offset="1" stopColor="#05A66B" />
         </linearGradient>
       </defs>
     </svg>
