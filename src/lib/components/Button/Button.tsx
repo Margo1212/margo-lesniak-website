@@ -14,8 +14,8 @@ export type ButtonProps = {
 export const Button = ({ href, text, icon, bg, styles }: ButtonProps) => {
   const background =
     bg === "primary"
-      ? "bg-gradient-to-b from-[#6F00FF] to-[#37007E] hover:from-pink-500 hover:to-yellow-500 "
-      : "bg-gradient-to-b from-[#00CE83] to-[#008253] hover:from-pink-500 hover:to-yellow-500";
+      ? "bg-gradient-to-b from-[#6F00FF] to-[#37007E] "
+      : "bg-gradient-to-b from-[#05A66B] to-[#008253] hover:from-pink-500 hover:to-yellow-500";
 
   return (
     <Link
