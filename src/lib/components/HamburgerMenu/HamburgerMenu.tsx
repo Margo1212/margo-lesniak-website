@@ -14,6 +14,7 @@ import { IconButton } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import Link from "next/link";
+import { SocialMedia } from "../SocialMedia/SocialMedia";
 
 export default function HamburgerMenu() {
   const [state, setState] = useState(false);
@@ -45,19 +46,21 @@ export default function HamburgerMenu() {
         <MenuIcon sx={{ color: "rgba(111, 0, 255, 1)" }} />
       </IconButton>
 
-      <Drawer anchor="right" open={state} onClose={toggleDrawer(false)}>
+      <Drawer  sx={{width: '100%',}} anchor="right" open={state} onClose={toggleDrawer(false)}>
         <Box
           sx={{
             p: 2,
             height: 1,
+            
+            backgroundColor: '#1D2127'
           }}
         >
           <IconButton onClick={toggleDrawer(false)} sx={{ mb: 2 }}>
-            <CloseIcon />
+            <CloseIcon sx={{ color: "rgba(111, 0, 255, 1)" }} />
           </IconButton>
 
           <Box sx={{ mb: 2, px: "10px" }}>
-            <ul className="hidden text-white font-medium  space-x-10 align-middle py-5 laptop:flex flex-row justify-between">
+            <ul className=" text-white font-medium space-y-3">
               <li>
                 <Link aria-label="Link to home" href="/">
                   Strona Główna
@@ -83,7 +86,10 @@ export default function HamburgerMenu() {
                   Projekty
                 </Link>
               </li>
+              
             </ul>
+            <div className="mt-10"><SocialMedia /></div>
+            
           </Box>
         </Box>
       </Drawer>
