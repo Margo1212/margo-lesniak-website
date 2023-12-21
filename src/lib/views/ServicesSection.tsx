@@ -20,8 +20,8 @@ export const ServicesSection = () => {
         </p>
       </div>
 
-      <div className="w-full grid tablet:grid-cols-2 gap-y-4 laptop:grid-cols-4 gap-x-5">
-        <div className="  text-white min-h-[429px] p-8 flex flex-col items-center gap-y-5  rounded-md shadow-[12px_12px_24px_#191c21,-5px_-5px_11px_#21262d]">
+      <div className="w-full grid tablet:grid-cols-2 gap-y-4 laptop:grid-cols-4 gap-x-8">
+        <div className=" hover:bg-[#282930]/20 duration-200 text-white min-h-[429px] p-8 flex flex-col items-center gap-y-5  rounded-md shadow-[12px_12px_24px_#191c21,-5px_-5px_11px_#21262d]">
           <div className="text-primary">
             <Image
               alt="service-1"
@@ -40,7 +40,7 @@ export const ServicesSection = () => {
             <li> Tworzenie stron korporacyjnych, portfolio, blogów..</li>
           </ul>
         </div>
-        <div className="shadow-[12px_12px_24px_#191c21,-5px_-5px_11px_#21262d] rounded-md  text-white min-h-[429px] p-8 flex flex-col items-center gap-y-5">
+        <div className="hover:bg-[#282930]/20 duration-200 shadow-[12px_12px_24px_#191c21,-5px_-5px_11px_#21262d] rounded-md  text-white min-h-[429px] p-8 flex flex-col items-center gap-y-5">
           <div className="text-primary">
             <Image
               alt="service-2"
@@ -62,7 +62,7 @@ export const ServicesSection = () => {
             </li>
           </ul>
         </div>
-        <div className="shadow-[12px_12px_24px_#191c21,-5px_-5px_11px_#21262d] rounded-md text-white  min-h-[429px] p-8 flex flex-col items-center gap-y-5">
+        <div className="hover:bg-[#282930]/20 duration-200 shadow-[12px_12px_24px_#191c21,-5px_-5px_11px_#21262d] rounded-md text-white  min-h-[429px] p-8 flex flex-col items-center gap-y-5">
           <div className="text-primary">
             <Image
               alt="service-3"
@@ -77,7 +77,7 @@ export const ServicesSection = () => {
             <li>Implementacja tagów meta, mapy witryny itp.</li>
           </ul>
         </div>
-        <div className="shadow-[12px_12px_24px_#191c21,-5px_-5px_11px_#21262d] rounded-md  text-white  min-h-[429px] p-8 flex flex-col items-center gap-y-5">
+        <div className="hover:bg-[#282930]/20 duration-200 shadow-[12px_12px_24px_#191c21,-5px_-5px_11px_#21262d] rounded-md  text-white  min-h-[429px] p-8 flex flex-col items-center gap-y-5">
           <div className="text-primary">
             <Image
               alt="service-4"
