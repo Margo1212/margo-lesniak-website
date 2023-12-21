@@ -17,7 +17,7 @@ export const TextArea = forwardRef(
           ref={ref}
           defaultValue={value}
           onChange={onChange}
-          className="shadow-sm -mb-1 mt-2 bg-[#F4F4F4] border-b-2 border-b-dark-blue appearance-none text-sm font-light w-full py-2 px-3 text-dark-gray leading-tight focus:outline-none focus:shadow-outline"
+          className="shadow-sm -mb-1 mt-2 bg-main-bg border-2 rounded-md border-primary/30 focus:border-primary appearance-none text-sm font-normal w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline"
           {...rest}
         />
       </div>

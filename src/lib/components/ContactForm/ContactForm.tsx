@@ -6,7 +6,7 @@ import * as Yup from "yup";
 import { Input } from "@components/Input/Input";
 import { TextArea } from "@components/TextArea/TextArea";
 import { Checkbox, FormControlLabel } from "@mui/material";
-import { indigo, pink } from "@mui/material/colors";
+import { purple } from "@mui/material/colors";
 
 type UserSubmitForm = {
   name: string;
@@ -118,30 +118,34 @@ export const ContactForm = () => {
       {formik.touched.message && formik.errors.message && (
         <span className="text-alert text-xs p-0 ">{formik.errors.message}</span>
       )}
-      <p className="text-xs">
+      <p className="text-xs text-text">
         Wyrażam zgodę na przetwarzanie danych osobowych podanych w formularzu
         zgodnie z ogólnym rozporządzeniem o ochronie danych (RODO) w celu:
       </p>
       <FormControlLabel
-        required
+        sx={{ color: 'rgb(170 174 182)' }}
+       required
         control={
-          <Checkbox
+          <Checkbox 
             sx={{
-              color: indigo[900],
+              color: purple[900],
               "&.Mui-checked": {
-                color: indigo[900],
+                color: purple[900],
               },
+            
+          
+             
             }}
           />
         }
         label={
-          <p className="text-xs">
+          <p className="text-xs text-text w-full ">
             udzielenia odpowiedzi na wpisane w formularzu kontaktowym zapytanie
           </p>
         }
       />
 
-      <button className="transition ease-in-out duration-300 bg-dark-blue hover:bg-dark-blue/90 rounded-md font-medium text-white py-3 px-6 w-full">
+      <button className={`bg-primary py-2 px-4 w-full text-white text-center tracking-wide transition ease-in-out duration-300 shadow-md rounded-full font-semibold `}>
         Wyślij
       </button>
     </form>

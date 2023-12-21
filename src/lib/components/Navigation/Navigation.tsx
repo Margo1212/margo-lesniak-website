@@ -54,7 +54,7 @@ const Navigation = () => {
             styles="py-3 px-7"
             text="Skontaktuj się ze mną"
             bg="secondary"
-            href="#"
+            href="/contact"
           />
         </li>
       </ul>
