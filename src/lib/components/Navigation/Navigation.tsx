@@ -8,7 +8,7 @@ export const revalidate = 10;
 
 const Navigation = () => {
   return (
-    <nav className="w-full h-auto flex justify-between items-center bg-main-bg laptop:text-xs desktop:text-sm font-medium px-10 py-2 laptop:py-3 laptop:px-24">
+    <nav className=" w-full h-auto flex justify-between items-center bg-main-bg laptop:text-xs desktop:text-sm font-medium px-10 py-2 laptop:py-3 laptop:px-24">
       <div className="hidden h-full laptop:flex items-center">
         <Link aria-label="Link to homepage" href="/">
           <LogoCh />
@@ -44,7 +44,7 @@ const Navigation = () => {
           </Link>
         </li>
         <li>
-          <Link aria-label="Link to news page" href="#">
+          <Link aria-label="Link to projects " href="/projects">
             Projekty
           </Link>
         </li>

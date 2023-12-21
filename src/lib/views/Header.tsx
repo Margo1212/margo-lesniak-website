@@ -42,7 +42,7 @@ export const Header = ({}: HeaderProps) => {
       <div className="w-1/2 laptop:w-1/2 flex justify-center">
         <div className="flex justify-end items-center">
           <Image
-            className="w-full object-cover h-full laptop:w-3/4 desktop:w-full"
+            className="w-full object-cover h-full desktop:w-full"
             src="woman.svg"
             alt="woman"
             width={450}
