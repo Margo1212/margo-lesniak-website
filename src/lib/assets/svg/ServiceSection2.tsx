@@ -1,7 +1,7 @@
 export const ServiceSection2 = () => {
   return (
     <svg
-      className="absolute bottom-10 left-14"
+      className="hidden laptop:block absolute bottom-10 left-14"
       width="42"
       height="100"
       viewBox="0 0 42 100"
