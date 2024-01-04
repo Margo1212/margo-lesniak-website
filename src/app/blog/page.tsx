@@ -41,7 +41,7 @@ export default async function Page() {
         capitalizeLinks
       />
       <div className="grid laptop:grid-cols-3 laptop:gap-x-14 content-center tablet:grid-cols-2 tablet:gap-x-12 grid-cols-1 desktop:gap-x-32 gap-y-14">
-        {posts.map((post: any) => (
+        {posts?.map((post: any) => (
           <div key={post.id} className="flex flex-col gap-y-5">
             <div className="w-full h-[250px]">
               <Image
