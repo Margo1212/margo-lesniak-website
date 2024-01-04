@@ -16,10 +16,12 @@ const config: Config = {
     },
     colors: {
       "main-bg": "#1D2127",
-      "text": "#AAAEB6",
+      "secondary-bg": "#1D2126",
+      text: "#AAAEB6",
       white: "#D1D7E0",
       primary: "#6F00FF",
       secondary: "#36FFB5",
+      alert: "#E30029",
     },
     extend: {},
   },
