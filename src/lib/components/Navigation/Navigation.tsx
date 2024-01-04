@@ -1,14 +1,14 @@
+import { LogoCh } from "@lib/assets/svg/Logo-ch";
+import { LogoMin } from "@lib/assets/svg/Logo-min";
 import Link from "next/link";
 import { Button } from "../Button/Button";
 import HamburgerMenu from "../HamburgerMenu/HamburgerMenu";
-import { LogoCh } from "@lib/assets/svg/Logo-ch";
-import { LogoMin } from "@lib/assets/svg/Logo-min";
 
 export const revalidate = 10;
 
 const Navigation = () => {
   return (
-    <nav className=" w-full h-auto flex justify-between items-center bg-main-bg laptop:text-xs desktop:text-sm font-medium px-10 py-2 laptop:py-3 laptop:px-24">
+    <nav className=" w-full h-auto flex justify-between items-center bg-main-bg laptop:text-xs desktop:text-sm font-medium px-10 py-2 laptop:py-3 laptop:px-24 desktop:px-44">
       <div className="hidden h-full laptop:flex items-center">
         <Link aria-label="Link to homepage" href="/">
           <LogoCh />
@@ -34,12 +34,12 @@ const Navigation = () => {
           </Link>
         </li>
         <li>
-          <Link aria-label="Link to gallery" href="/offer">
+          <Link aria-label="Link to gallery" href="/services">
             Oferta
           </Link>
         </li>
         <li>
-          <Link aria-label="Link to news page" href="#">
+          <Link aria-label="Link to news page" href="/blog">
             Blog
           </Link>
         </li>

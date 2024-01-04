@@ -10,17 +10,16 @@ export const AboutSection = () => {
   return (
     <section
       id="about-section"
-      className="bg-main-bg flex relative px-5 laptop:px-24 py-24"
+      className="bg-main-bg flex relative px-5 laptop:px-24 desktop:px-44 py-24 laptop:items-center"
     >
-      <AboutSectionImgBt />
-      <AboutSectionImgStars />
-      <div className="w-1/3 hidden laptop:block h-full">
+     
+      <div className="laptop:w-1/3 desktop:w-1/2 laptop:flex laptop:justify-center hidden h-full">
         <Image
           className="laptop:h-full object-cover"
           src="AboutImage.svg"
           alt="about"
-          width={500}
-          height={500}
+          width={400}
+          height={400}
         />
       </div>
       <div className="laptop:w-2/3 w-full flex flex-col laptop:items-start items-center justify-center py-5 laptop:py-2 desktop:py-8 px-4 laptop:px-7 space-y-8">
