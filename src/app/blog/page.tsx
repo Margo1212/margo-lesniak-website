@@ -15,6 +15,7 @@ export default async function Page() {
   const posts = await Promise.resolve(postData).catch((err) =>
     console.error(err)
   );
+  console.log(posts);
 
   return (
     <section className="bg-main-bg px-5 laptop:px-24 gap-3 pt-10 pb-32 desktop:px-44 space-y-10">
