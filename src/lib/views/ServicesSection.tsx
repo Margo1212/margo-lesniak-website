@@ -1,5 +1,3 @@
-import { ServiceSection1 } from "@lib/assets/svg/ServiceSection1";
-import { ServiceSection2 } from "@lib/assets/svg/ServiceSection2";
 import { Button } from "@lib/components/Button/Button";
 import Image from "next/image";
 
@@ -7,9 +5,7 @@ export const revalidate = 10;
 
 export const ServicesSection = () => {
   return (
-    <section className="relative bg-main-bg flex flex-col laptop:py-14 items-center justify-center gap-y-20 px-5 laptop:px-24">
-      <ServiceSection1 />
-      <ServiceSection2 />
+    <section className="relative bg-main-bg flex flex-col laptop:py-14 items-center justify-center gap-y-20 px-5 laptop:px-24 desktop:px-44">
       <div className="text-center  space-y-5">
         <h2 className="text-4xl text-white font-medium">
           Co mogę dla Ciebie zrobić

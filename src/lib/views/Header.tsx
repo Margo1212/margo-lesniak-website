@@ -13,8 +13,8 @@ export type HeaderProps = {};
 
 export const Header = ({}: HeaderProps) => {
   return (
-    <header className="relative w-full px-5 scroll-smooth bg-main-bg flex flex-col-reverse items-center laptop:flex-row gap-y-5 laptop:gap-y-0  laptop:px-24 pt-10 pb-32">
-      <Stars position="down" />
+    <header className="relative w-full px-5 scroll-smooth bg-main-bg flex flex-col-reverse items-center laptop:flex-row gap-y-5 laptop:gap-y-0  laptop:px-24 desktop:px-44 pt-10 pb-32">
+      
       <Link
         className="absolute bottom-5 laptop:bottom-10 desktop:bottom-10 left-1/2 transform -translate-x-1/2 "
         href="#about-section"
@@ -39,8 +39,8 @@ export const Header = ({}: HeaderProps) => {
           <SocialMedia />
         </div>
       </div>
-      <div className="w-1/2 laptop:w-1/2 flex justify-center">
-        <div className="flex justify-end items-center">
+      <div className=" laptop:w-1/2 h-full flex justify-center items-center laptop:pl-20">
+        
           <Image
             className="w-full object-cover h-full desktop:w-full"
             src="woman.svg"
@@ -48,7 +48,7 @@ export const Header = ({}: HeaderProps) => {
             width={450}
             height={464}
           />
-        </div>
+        
       </div>
     </header>
   );
