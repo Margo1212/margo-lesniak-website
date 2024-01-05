@@ -9,7 +9,7 @@ export const Input = forwardRef(
     return (
       <div className=" w-full mt-1">
         <input
-          className={`shadow-sm appearance-none bg-main-bg w-full border-2 rounded-md border-primary/30 focus:border-primary py-3 px-4 text-sm font-normal text-white mt-2 leading-tight focus:outline-none focus:shadow-outline`}
+          className={`bg-main-bg appearance-none shadow-[12px_12px_24px_#191c21,-5px_-5px_11px_#21262d] w-full rounded-md focus:border-2 focus:border-primary/20 py-3 px-4 text-sm font-normal text-white mt-2 leading-tight focus:outline-none focus:shadow-outline`}
           id={id}
           type={type}
           ref={ref}

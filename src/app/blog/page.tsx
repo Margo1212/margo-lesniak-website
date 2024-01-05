@@ -15,7 +15,6 @@ export default async function Page() {
   const posts = await Promise.resolve(postData).catch((err) =>
     console.error(err)
   );
-  console.log(posts);
 
   return (
     <section className="bg-main-bg px-5 laptop:px-24 gap-3 pt-10 pb-32 desktop:px-44 space-y-10">
@@ -30,9 +29,9 @@ export default async function Page() {
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
-              fill-rule="evenodd"
+              fillRule="evenodd"
               d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-              clip-rule="evenodd"
+              clipRule="evenodd"
             ></path>
           </svg>
         }
