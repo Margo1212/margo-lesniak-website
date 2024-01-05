@@ -4,3 +4,10 @@ export const postReducer = (rawPost: any) => {
 
   return post;
 };
+
+export const faqReducer = (rawFaq: any) => {
+  let faq = { ...rawFaq?.attributes };
+  faq.id = rawFaq?.id;
+
+  return faq;
+};

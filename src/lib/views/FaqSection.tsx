@@ -3,17 +3,20 @@ import Accordion from "@mui/material/Accordion/Accordion";
 import AccordionDetails from "@mui/material/AccordionDetails/AccordionDetails";
 import AccordionSummary from "@mui/material/AccordionSummary/AccordionSummary";
 import Typography from "@mui/material/Typography/Typography";
-import { faq } from "../data/faq";
+import { getFaq } from "../data/faq";
 
-export const FaqSection = () => {
+export const FaqSection = async () => {
+  const faqData = getFaq();
+  const faq = await Promise.resolve(faqData).catch((err) => console.error(err));
+
   return (
     <section className="relative bg-main-bg flex flex-col laptop:py-14 items-center justify-center px-3 gap-y-5 py-20">
       <h2 className="text-4xl text-white font-medium">FAQ</h2>
-      {faq.faq ? (
+      {faq[0].question ? (
         <div className=" w-full desktop:w-[800px] mt-8">
-          {faq.faq.map((question, i) => (
+          {faq[0].question.map((q: any) => (
             <Accordion
-              key={i}
+              key={q.id}
               sx={{
                 marginBottom: "25px",
                 backgroundColor: "#21262d",
@@ -32,7 +35,7 @@ export const FaqSection = () => {
                 aria-controls="panel2a-content"
                 id="panel2a-header"
               >
-                <p className="font-normal text-white">{question.question}</p>
+                <p className="font-normal text-white">{q.question}</p>
               </AccordionSummary>
               <AccordionDetails>
                 <Typography
@@ -46,7 +49,7 @@ export const FaqSection = () => {
                     fontWeight: "100",
                   }}
                 >
-                  {question.answer}
+                  {q.answer}
                 </Typography>
               </AccordionDetails>
             </Accordion>

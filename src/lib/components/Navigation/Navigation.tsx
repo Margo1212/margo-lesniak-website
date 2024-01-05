@@ -35,7 +35,7 @@ const Navigation = () => {
         </li>
         <li>
           <Link aria-label="Link to gallery" href="/services">
-            Oferta
+            Usługi
           </Link>
         </li>
         <li>
