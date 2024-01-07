@@ -9,13 +9,13 @@ const Drawer = dynamic(() => import("@mui/material/Drawer"), {
 
 import * as React from "react";
 
-import { useState } from "react";
-import { IconButton } from "@mui/material";
-import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
+import MenuIcon from "@mui/icons-material/Menu";
+import { IconButton } from "@mui/material";
 import Link from "next/link";
-import { SocialMedia } from "../SocialMedia/SocialMedia";
+import { useState } from "react";
 import { Button } from "../Button/Button";
+import { SocialMedia } from "../SocialMedia/SocialMedia";
 
 export default function HamburgerMenu() {
   const [state, setState] = useState(false);
@@ -47,16 +47,20 @@ export default function HamburgerMenu() {
         <MenuIcon sx={{ color: "rgba(111, 0, 255, 1)" }} />
       </IconButton>
 
-      <Drawer PaperProps={{
-            sx: { width: "70%" },
-          }}   anchor="right" open={state} onClose={toggleDrawer(false)}>
+      <Drawer
+        PaperProps={{
+          sx: { width: "70%" },
+        }}
+        anchor="right"
+        open={state}
+        onClose={toggleDrawer(false)}
+      >
         <Box
           sx={{
             p: 2,
             height: 1,
-            
-            
-            backgroundColor: '#1D2127'
+
+            backgroundColor: "#1D2127",
           }}
         >
           <IconButton onClick={toggleDrawer(false)} sx={{ mb: 2 }}>
@@ -76,31 +80,32 @@ export default function HamburgerMenu() {
                 </Link>
               </li>
               <li>
-                <Link aria-label="Link to gallery" href="/offer">
+                <Link aria-label="Link to gallery" href="/services">
                   Oferta
                 </Link>
               </li>
               <li>
-                <Link aria-label="Link to news page" href="#">
+                <Link aria-label="Link to news page" href="/blog">
                   Blog
                 </Link>
               </li>
               <li>
-                <Link aria-label="Link to news page" href="#">
+                <Link aria-label="Link to news page" href="/projects">
                   Projekty
                 </Link>
               </li>
               <li>
-            <Button
-            styles="py-3 px-7"
-            text="Skontaktuj się ze mną"
-            bg="secondary"
-            href="#"
-                /></li>
-              <li ><SocialMedia /></li>
+                <Button
+                  styles="py-3 px-7"
+                  text="Skontaktuj się ze mną"
+                  bg="secondary"
+                  href="#"
+                />
+              </li>
+              <li>
+                <SocialMedia />
+              </li>
             </ul>
-            
-            
           </Box>
         </Box>
       </Drawer>
