@@ -5,7 +5,7 @@ export const revalidate = 10;
 
 export const ServicesSection = () => {
   return (
-    <section className="relative bg-main-bg flex flex-col laptop:py-14 items-center justify-center gap-y-20 px-5 laptop:px-24 desktop:px-44">
+    <section className="relative  flex flex-col laptop:py-14 items-center justify-center gap-y-20 px-5 laptop:px-0">
       <div className="text-center  space-y-5">
         <h2 className="text-4xl text-white font-medium">
           Co mogę dla Ciebie zrobić
@@ -17,8 +17,8 @@ export const ServicesSection = () => {
       </div>
 
       <div className="w-full grid tablet:grid-cols-2 gap-y-4 laptop:grid-cols-4 gap-x-8">
-        <div className=" hover:bg-[#282930]/20 duration-200 text-white min-h-[429px] p-8 flex flex-col items-center gap-y-5  rounded-md shadow-[12px_12px_24px_#191c21,-5px_-5px_11px_#21262d]">
-          <div className="text-primary">
+        <div className=" hover:bg-[#282930]/20 duration-200 text-white min-h-[429px] px-4 py-8 flex flex-col items-center gap-y-5  rounded-3xl shadow-[5px_5px_9px_#131519,-5px_-5px_9px_#272d35]">
+          <div className="text-primary shadow-[inset_5px_5px_9px_#131519,inset_-5px_-5px_9px_#272d35] p-4 rounded-xl">
             <Image
               alt="service-1"
               src="service-1-icon.svg"
@@ -33,11 +33,11 @@ export const ServicesSection = () => {
             <li>
               Projektowanie i rozwijanie responsywnych stron internetowych.
             </li>
-            <li> Tworzenie stron korporacyjnych, portfolio, blogów..</li>
+            <li> Tworzenie stron korporacyjnych, portfolio, blogów.</li>
           </ul>
         </div>
-        <div className="hover:bg-[#282930]/20 duration-200 shadow-[12px_12px_24px_#191c21,-5px_-5px_11px_#21262d] rounded-md  text-white min-h-[429px] p-8 flex flex-col items-center gap-y-5">
-          <div className="text-primary">
+        <div className="hover:bg-[#282930]/20 duration-200 shadow-[5px_5px_9px_#131519,-5px_-5px_9px_#272d35] rounded-3xl  text-white min-h-[429px] px-4 py-8 flex flex-col items-center gap-y-5">
+          <div className="text-primary shadow-[inset_5px_5px_9px_#131519,inset_-5px_-5px_9px_#272d35] p-4 rounded-xl">
             <Image
               alt="service-2"
               src="service-2-icon.svg"
@@ -58,8 +58,8 @@ export const ServicesSection = () => {
             </li>
           </ul>
         </div>
-        <div className="hover:bg-[#282930]/20 duration-200 shadow-[12px_12px_24px_#191c21,-5px_-5px_11px_#21262d] rounded-md text-white  min-h-[429px] p-8 flex flex-col items-center gap-y-5">
-          <div className="text-primary">
+        <div className="hover:bg-[#282930]/20 duration-200 shadow-[5px_5px_9px_#131519,-5px_-5px_9px_#272d35] rounded-3xl text-white  min-h-[429px] px-4 py-8 flex flex-col items-center gap-y-5">
+          <div className="text-primary shadow-[inset_5px_5px_9px_#131519,inset_-5px_-5px_9px_#272d35] p-4 rounded-xl">
             <Image
               alt="service-3"
               src="service-3-icon.svg"
@@ -73,8 +73,8 @@ export const ServicesSection = () => {
             <li>Implementacja tagów meta, mapy witryny itp.</li>
           </ul>
         </div>
-        <div className="hover:bg-[#282930]/20 duration-200 shadow-[12px_12px_24px_#191c21,-5px_-5px_11px_#21262d] rounded-md  text-white  min-h-[429px] p-8 flex flex-col items-center gap-y-5">
-          <div className="text-primary">
+        <div className="hover:bg-[#282930]/20 duration-200 shadow-[5px_5px_9px_#131519,-5px_-5px_9px_#272d35] rounded-3xl  text-white  min-h-[429px] px-4 py-8 flex flex-col items-center gap-y-5">
+          <div className="text-primary shadow-[inset_5px_5px_9px_#131519,inset_-5px_-5px_9px_#272d35] p-4 rounded-xl">
             <Image
               alt="service-4"
               src="service-4-icon.svg"

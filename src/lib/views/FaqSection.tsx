@@ -10,7 +10,7 @@ export const FaqSection = async () => {
   const faq = await Promise.resolve(faqData).catch((err) => console.error(err));
 
   return (
-    <section className="relative bg-main-bg flex flex-col laptop:py-14 items-center justify-center px-3 gap-y-5 py-20">
+    <section className="relative flex flex-col laptop:py-14 items-center justify-center px-3 laptop:px-0 gap-y-5 py-20">
       <h2 className="text-4xl text-white font-medium">FAQ</h2>
       {faq[0].question ? (
         <div className=" w-full desktop:w-[800px] mt-8">
@@ -20,8 +20,8 @@ export const FaqSection = async () => {
               sx={{
                 marginBottom: "25px",
                 backgroundColor: "#21262d",
-                boxShadow: "6px 6px 12px #191c21, -6px -6px 12px #21262d",
-
+                boxShadow: "2px 2px 8px #131519, -2px -2px 8px #272d35",
+                borderRadius: "5px",
                 overflow: "hidden",
               }}
             >

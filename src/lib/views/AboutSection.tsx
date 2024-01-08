@@ -1,18 +1,13 @@
-import Image from "next/image";
-import { Title } from "@lib/components/Title/Title";
-import Link from "next/link";
 import { Button } from "@lib/components/Button/Button";
-import { AboutSectionImgBt } from "@lib/assets/svg/AboutSectionImgBt";
-import { AboutSectionImgStars } from "@lib/assets/svg/AboutSectionImgStars";
+import Image from "next/image";
 export const revalidate = 10;
 
 export const AboutSection = () => {
   return (
     <section
       id="about-section"
-      className="bg-main-bg flex relative px-5 laptop:px-24 desktop:px-44 py-24 laptop:items-center"
+      className="flex relative px-5 laptop:px-8 gap-x-5 py-24 laptop:items-center"
     >
-     
       <div className="laptop:w-1/3 desktop:w-1/2 laptop:flex laptop:justify-center hidden h-full">
         <Image
           className="laptop:h-full object-cover"
@@ -22,7 +17,7 @@ export const AboutSection = () => {
           height={400}
         />
       </div>
-      <div className="laptop:w-2/3 w-full flex flex-col laptop:items-start items-center justify-center py-5 laptop:py-2 desktop:py-8 px-4 laptop:px-7 space-y-8">
+      <div className="laptop:w-2/3 w-full flex flex-col laptop:items-start items-center justify-center py-5 laptop:py-2 desktop:py-8 space-y-8">
         <h2 className="text-4xl text-white font-medium">O mnie</h2>
         <p className="text-md text-center laptop:text-left text-[#AAAEB6] break-words font-normal leading-relaxed">
           Witaj na mojej stronie! Jestem pasjonatką web developmentu, która z
