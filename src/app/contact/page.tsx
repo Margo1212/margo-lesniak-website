@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 export default async function Page() {
   return (
-    <section className="bg-main-bg px-5 laptop:px-24 gap-3 pt-10 pb-32 desktop:px-44 space-y-10">
+    <section className=" px-5 laptop:px-24 gap-3 pt-10 pb-32  space-y-10">
       <Title>Skontaktuj się ze mną</Title>
       <NextBreadcrumb
         homeElement={"Strona Główna"}

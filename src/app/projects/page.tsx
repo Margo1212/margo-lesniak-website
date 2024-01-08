@@ -7,7 +7,7 @@ import { projects } from "../../lib/data/projects";
 export default function Projects() {
   return (
     <>
-      <section className="bg-main-bg px-5 laptop:px-24 gap-3 pt-10 pb-32 desktop:px-44 space-y-10">
+      <section className=" px-5 laptop:px-24 gap-3 pt-10 pb-32  space-y-10">
         <Title>Projekty</Title>
         <NextBreadcrumb
           homeElement={"Strona Główna"}
@@ -19,9 +19,9 @@ export default function Projects() {
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
-                fill-rule="evenodd"
+                fillRule="evenodd"
                 d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                clip-rule="evenodd"
+                clipRule="evenodd"
               ></path>
             </svg>
           }
@@ -35,7 +35,7 @@ export default function Projects() {
             <Link
               href={project.url}
               target="_blank"
-              className="p-5 w-full shadow-[12px_12px_24px_#191c21,-5px_-5px_11px_#21262d] hover:bg-[#282930]/30 duration-200 rounded-lg text-white min-h-[350px]"
+              className="p-5 w-full shadow-[5px_5px_9px_#131519,-5px_-5px_9px_#272d35] hover:bg-[#282930]/30 duration-200 rounded-3xl text-white min-h-[350px]"
               key={project.id}
             >
               <div>
