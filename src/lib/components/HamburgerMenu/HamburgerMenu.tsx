@@ -44,7 +44,7 @@ export default function HamburgerMenu() {
           p: 0,
         }}
       >
-        <MenuIcon sx={{ color: "rgba(111, 0, 255, 1)" }} />
+        <MenuIcon sx={{ color: "rgba(111, 0, 255, 1)", fontSize: "32px" }} />
       </IconButton>
 
       <Drawer

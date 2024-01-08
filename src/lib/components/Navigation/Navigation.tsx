@@ -1,4 +1,4 @@
-import { LogoCh } from "@lib/assets/svg/Logo-ch";
+import { Logo } from "@lib/assets/svg/Logo";
 import { LogoMin } from "@lib/assets/svg/Logo-min";
 import Link from "next/link";
 import { Button } from "../Button/Button";
@@ -8,10 +8,10 @@ export const revalidate = 10;
 
 const Navigation = () => {
   return (
-    <nav className=" w-full h-auto flex justify-between items-center bg-main-bg laptop:text-xs desktop:text-sm font-medium px-10 py-2 laptop:py-3 laptop:px-24 desktop:px-44">
+    <nav className="w-full h-auto mt-5 rounded-3xl m-auto flex justify-between items-center bg-main-bg shadow-[5px_5px_9px_#131519,-5px_-5px_9px_#272d35] laptop:text-xs desktop:text-sm font-medium px-6 py-3 laptop:py-3 ">
       <div className="hidden h-full laptop:flex items-center">
         <Link aria-label="Link to homepage" href="/">
-          <LogoCh />
+          <Logo />
         </Link>
       </div>
       <div className="laptop:hidden  flex items-center">
@@ -22,7 +22,7 @@ const Navigation = () => {
 
       <HamburgerMenu />
 
-      <ul className="hidden text-white font-normal  space-x-10 align-middle py-5 laptop:flex flex-row justify-between tracking-wide">
+      <ul className="hidden text-white font-normal  space-x-8 align-middle py-5 laptop:flex flex-row justify-between tracking-wide">
         <li>
           <Link aria-label="Link to home" href="/">
             Strona Główna
