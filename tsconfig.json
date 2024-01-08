@@ -25,7 +25,8 @@
       "@components/*": ["lib/components/*"],
       "@pages/*": ["app/pages/*"],
       "@svg/*": ["lib/assets/svg/*"],
-      "@views": ["lib/views/*"]
+      "@views": ["lib/views/*"],
+      "react": ["./node_modules/@types/react"]
     }
   },
   "include": [

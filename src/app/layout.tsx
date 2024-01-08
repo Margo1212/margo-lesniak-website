@@ -1,8 +1,8 @@
+import { Footer } from "@lib/components/Footer/Footer";
+import Navigation from "@lib/components/Navigation/Navigation";
 import type { Metadata } from "next";
 import { Lato } from "next/font/google";
 import "../styles/globals.css";
-import Navigation from "@lib/components/Navigation/Navigation";
-import { Footer } from "@lib/components/Footer/Footer";
 
 const lato = Lato({
   weight: ["100", "300", "400", "700"],
@@ -29,7 +29,9 @@ export default function RootLayout({
           async
         ></script>
       </head>
-      <body className={lato.className}>
+      <body
+        className={`px-5 laptop:px-24 desktop:px-40 bg-main-bg ${lato.className}`}
+      >
         <Navigation />
         {children}
         <Footer />

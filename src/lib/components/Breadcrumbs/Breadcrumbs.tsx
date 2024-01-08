@@ -27,7 +27,7 @@ export const NextBreadcrumb = ({
   const pathNames = paths.split("/").filter((path) => path);
 
   return (
-    <div className="bg-main-bg  shadow-[12px_12px_24px_#191c21,-5px_-5px_11px_#21262d]">
+    <div className="bg-main-bg shadow-[5px_5px_9px_#131519,-5px_-5px_9px_#272d35] rounded-3xl">
       <ul className={containerClasses}>
         <li className={listClasses}>
           <Link href={"/"} className="flex items-center">
