@@ -20,7 +20,6 @@ export async function request(
 
   const response = fetch(`${await getStrapiURL("/api")}/${url}`, {
     headers,
-    next: { revalidate: 10 },
   })
     .then((response) => response.json())
     .catch((error) => console.log(error));
