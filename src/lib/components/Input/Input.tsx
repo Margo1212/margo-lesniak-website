@@ -1,5 +1,5 @@
-import { forwardRef, useId } from "react";
 import type { ComponentPropsWithRef, Ref } from "react";
+import { forwardRef, useId } from "react";
 
 type Props = ComponentPropsWithRef<"input">;
 
@@ -9,7 +9,7 @@ export const Input = forwardRef(
     return (
       <div className=" w-full mt-1">
         <input
-          className={`bg-main-bg appearance-none shadow-[12px_12px_24px_#191c21,-5px_-5px_11px_#21262d] w-full rounded-md focus:border-2 focus:border-primary/20 py-3 px-4 text-sm font-normal text-white mt-2 leading-tight focus:outline-none focus:shadow-outline`}
+          className={`bg-main-bg appearance-none shadow-[5px_5px_9px_#131519,-5px_-5px_9px_#272d35] w-full rounded-3xl focus:border-2 focus:border-primary/20 py-3 px-4 text-sm font-normal text-white mt-2 leading-tight focus:outline-none focus:shadow-outline`}
           id={id}
           type={type}
           ref={ref}

@@ -14,7 +14,7 @@ export const getPosts = async () => {
   const res = await request(`posts?${query}`);
   const rawPosts = res?.data;
   const posts = rawPosts?.map((post: any) => postReducer(post));
-  console.log(posts);
+
   return posts;
 };
 

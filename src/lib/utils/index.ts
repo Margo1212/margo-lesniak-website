@@ -1,13 +1,14 @@
 export const postReducer = (rawPost: any) => {
-  let post = { ...rawPost?.attributes };
-  post.id = rawPost?.id;
-
+  const post = { ...rawPost?.attributes, id: rawPost?.id };
   return post;
 };
 
 export const faqReducer = (rawFaq: any) => {
-  let faq = { ...rawFaq?.attributes };
-  faq.id = rawFaq?.id;
-
+  const faq = { ...rawFaq?.attributes, id: rawFaq?.id };
   return faq;
+};
+
+export const techReducer = (rawTech: any) => {
+  const tech = { ...rawTech?.attributes, id: rawTech?.id };
+  return tech;
 };

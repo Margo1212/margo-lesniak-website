@@ -3,18 +3,15 @@ import Accordion from "@mui/material/Accordion/Accordion";
 import AccordionDetails from "@mui/material/AccordionDetails/AccordionDetails";
 import AccordionSummary from "@mui/material/AccordionSummary/AccordionSummary";
 import Typography from "@mui/material/Typography/Typography";
-import { getFaq } from "../data/faq";
+import { FAQItem, FaqSectionProps } from "types/types";
 
-export const FaqSection = async () => {
-  const faqData = getFaq();
-  const faq = await Promise.resolve(faqData).catch((err) => console.error(err));
-
+export const FaqSection = ({ faq }: FaqSectionProps) => {
   return (
-    <section className="relative flex flex-col laptop:py-14 items-center justify-center px-3 laptop:px-0 gap-y-5 py-20">
+    <section className="relative flex flex-col laptop:py-14 items-center justify-center px-5 tablet:px-0 gap-y-5 py-20">
       <h2 className="text-4xl text-white font-medium">FAQ</h2>
-      {faq[0].question ? (
-        <div className=" w-full desktop:w-[800px] mt-8">
-          {faq[0].question.map((q: any) => (
+      {faq.length > 0 ? (
+        <div className="w-full desktop:w-[800px] mt-8">
+          {faq.map((q: FAQItem) => (
             <Accordion
               key={q.id}
               sx={{
@@ -56,7 +53,7 @@ export const FaqSection = async () => {
           ))}
         </div>
       ) : (
-        <h2>No questions founded...</h2>
+        <h2>No questions found...</h2>
       )}
     </section>
   );

@@ -28,7 +28,7 @@ const Navigation = () => {
             Strona Główna
           </Link>
         </li>
-        <li>
+        {/* <li>
           <Link aria-label="Link to about page" href="/about">
             O mnie
           </Link>
@@ -37,7 +37,7 @@ const Navigation = () => {
           <Link aria-label="Link to gallery" href="/services">
             Usługi
           </Link>
-        </li>
+        </li> */}
         <li>
           <Link aria-label="Link to news page" href="/blog">
             Blog
