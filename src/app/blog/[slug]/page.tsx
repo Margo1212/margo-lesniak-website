@@ -4,15 +4,15 @@ import Image from "next/image";
 // export const revalidate = 9;
 
 export default async function Page({ params }: { params: { slug: string } }) {
-  const postData = getPostBySlug({ slug: params.slug });
-  const post: any = await Promise.resolve(postData).catch((err) =>
+  const post = await getPostBySlug({ slug: params.slug }).catch((err) =>
     console.error(err)
   );
 
-  console.log(post);
-
+  if (!post) {
+    return <div>Post not found</div>;
+  }
   return (
-    <div className="relative flex gap-4  px-6 py-4 laptop:py-16 laptop:px-20  overflow-clip">
+    <div className="relative flex gap-4  px-6 py-4 laptop:py-16  overflow-clip">
       <div className="laptop:w-1/2 space-y-5">
         <div className="space-y-5">
           <h2 className="text-2xl text-white font-normal text-center laptop:text-4xl laptop:text-left ">

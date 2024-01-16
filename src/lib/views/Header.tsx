@@ -8,7 +8,7 @@ export type HeaderProps = {};
 
 export const Header = ({}: HeaderProps) => {
   return (
-    <header className="relative w-full laptop:px-8 px-5 scroll-smooth flex flex-col-reverse items-center laptop:flex-row gap-y-5 laptop:gap-y-0 py-24">
+    <header className="relative w-full laptop:px-8 px-5 tablet:px-0 scroll-smooth flex flex-col-reverse items-center laptop:flex-row gap-y-5 laptop:gap-y-0 py-24">
       <div className="w-full laptop:w-1/2 flex flex-col justify-center gap-y-10 laptop:gap-y-16">
         <div className="space-y-3 laptop:space-y-6 flex flex-col">
           <p className="text-primary text-center laptop:text-left">

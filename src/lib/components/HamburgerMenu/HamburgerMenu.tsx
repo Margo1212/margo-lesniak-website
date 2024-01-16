@@ -74,7 +74,7 @@ export default function HamburgerMenu() {
                   Strona Główna
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link aria-label="Link to about page" href="/about">
                   O mnie
                 </Link>
@@ -83,7 +83,7 @@ export default function HamburgerMenu() {
                 <Link aria-label="Link to gallery" href="/services">
                   Oferta
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <Link aria-label="Link to news page" href="/blog">
                   Blog

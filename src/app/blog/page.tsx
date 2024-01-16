@@ -11,10 +11,7 @@ export const metadata: Metadata = {
 };
 
 export default async function Page() {
-  const postData = getPosts();
-  const posts = await Promise.resolve(postData).catch((err) =>
-    console.error(err)
-  );
+  const posts = await getPosts();
 
   return (
     <section className=" px-5 laptop:px-24 gap-3 pt-10 pb-32 space-y-10">

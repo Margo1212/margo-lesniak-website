@@ -5,7 +5,7 @@ export const revalidate = 10;
 
 export const ServicesSection = () => {
   return (
-    <section className="relative  flex flex-col laptop:py-14 items-center justify-center gap-y-20 px-5 laptop:px-0">
+    <section className="relative  flex flex-col laptop:py-14 items-center justify-center gap-y-20 px-5 tablet:px-0 ">
       <div className="text-center  space-y-5">
         <h2 className="text-4xl text-white font-medium">
           Co mogę dla Ciebie zrobić

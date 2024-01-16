@@ -14,11 +14,17 @@ export const metadata: Metadata = {
   description: "",
 };
 
+/**
+ * Renders the root layout of the application.
+ *
+ * @param children - The children components to render.
+ * @returns The rendered root layout.
+ */
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
-}) {
+}): JSX.Element {
   return (
     <html lang="en">
       <head>
@@ -30,7 +36,7 @@ export default function RootLayout({
         ></script>
       </head>
       <body
-        className={`px-5 laptop:px-24 desktop:px-40 bg-main-bg ${lato.className}`}
+        className={`px-2 tablet:px-5 laptop:px-12 desktop:px-40 bg-main-bg ${lato.className}`}
       >
         <Navigation />
         {children}
