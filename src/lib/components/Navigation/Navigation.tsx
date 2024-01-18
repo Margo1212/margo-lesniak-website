@@ -1,22 +1,19 @@
-import { Logo } from "@lib/assets/svg/Logo";
-import { LogoMin } from "@lib/assets/svg/Logo-min";
+import Image from "next/image";
 import Link from "next/link";
 import { Button } from "../Button/Button";
 import HamburgerMenu from "../HamburgerMenu/HamburgerMenu";
-
-export const revalidate = 10;
 
 const Navigation = () => {
   return (
     <nav className="w-full h-auto mt-5 rounded-3xl m-auto flex justify-between items-center bg-main-bg shadow-[5px_5px_9px_#131519,-5px_-5px_9px_#272d35] laptop:text-xs desktop:text-sm font-medium px-6 py-3 laptop:py-3 ">
       <div className="hidden h-full laptop:flex items-center">
         <Link aria-label="Link to homepage" href="/">
-          <Logo />
+          <Image src="/logo1.svg" alt="logo" width={200} height={200} />
         </Link>
       </div>
       <div className="laptop:hidden  flex items-center">
         <Link aria-label="Link to homepage" href="/">
-          <LogoMin />
+          <Image src="/logo-min.svg" alt="logo" width={75} height={50} />
         </Link>
       </div>
 

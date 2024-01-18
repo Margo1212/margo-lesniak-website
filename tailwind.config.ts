@@ -19,7 +19,7 @@ const config: Config = {
       "secondary-bg": "#1D2126",
       text: "#AAAEB6",
       white: "#D1D7E0",
-      primary: "#6F00FF",
+      primary: "#8C33FF",
       secondary: "#36FFB5",
       alert: "#E30029",
     },

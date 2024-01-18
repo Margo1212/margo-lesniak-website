@@ -20,6 +20,7 @@ export async function request(
 
   const response = fetch(`${await getStrapiURL("/api")}/${url}`, {
     headers,
+    cache: "force-cache",
   })
     .then((response) => response.json())
     .catch((error) => console.log(error));

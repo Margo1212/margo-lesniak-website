@@ -1,32 +1,46 @@
 export const Monitor = (props: any) => (
   <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={48}
-    height={48}
+    width="40"
+    height="37"
+    viewBox="0 0 40 37"
     fill="none"
-    {...props}
+    xmlns="http://www.w3.org/2000/svg"
   >
     <path
-      fill="#7633FF"
-      fillOpacity={0.2}
-      d="m17.143 46.286 3.428-8.572h6.857l3.43 8.572H17.142Z"
-    />
-    <path
-      fill="#7633FF"
-      fillOpacity={0.2}
-      d="M44.571 6.857H3.43a1.714 1.714 0 0 0-1.715 1.714V36a1.714 1.714 0 0 0 1.715 1.714H44.57A1.714 1.714 0 0 0 46.286 36V8.571a1.715 1.715 0 0 0-1.715-1.714Z"
-    />
-    <path
-      stroke="#7633FF"
+      d="M39 26.8696V2.52174C39 1.68131 38.3455 1 37.5385 1H2.46154C1.68629 1 1 1.71455 1 2.52174V26.8696C1 27.6767 1.68629 28.3913 2.46154 28.3913H37.5385C38.3137 28.3913 39 27.6767 39 26.8696Z"
+      stroke="#8C33FF"
       strokeLinecap="round"
       strokeLinejoin="round"
-      d="M44.571 6.857H3.43a1.714 1.714 0 0 0-1.715 1.714V36a1.714 1.714 0 0 0 1.715 1.714H44.57A1.714 1.714 0 0 0 46.286 36V8.571a1.715 1.715 0 0 0-1.715-1.714ZM20.571 37.714l-3.428 8.572M27.428 37.714l3.429 8.572M13.714 46.286h20.572"
     />
     <path
-      stroke="#7633FF"
+      d="M17.0769 28.3913L14.1539 36"
+      stroke="#8C33FF"
       strokeLinecap="round"
       strokeLinejoin="round"
-      d="m15.428 18-6 5.143 5.143 4.286M33.429 18.857l5.142 4.286-6 5.143M21.428 30l5.143-15.429"
+    />
+    <path
+      d="M22.9232 28.3913L25.8462 36"
+      stroke="#8C33FF"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M11.2308 36H28.7692"
+      stroke="#8C33FF"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M14.1538 10.1304L9.76923 14.6957L14.1538 19.2609"
+      stroke="#8C33FF"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M25.8461 10.1304L30.2307 14.6957L25.8461 19.2609"
+      stroke="#8C33FF"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     />
   </svg>
 );

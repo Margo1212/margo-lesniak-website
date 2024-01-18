@@ -1,7 +1,7 @@
-import Link from "next/link";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import Link from "next/link";
 
 export const revalidate = 10;
 
@@ -19,7 +19,7 @@ export const SocialMedia = ({}: SocialMediaProps) => {
         >
           <GitHubIcon
             sx={{
-              color: "rgba(111, 0, 255, 1)",
+              color: "#8C33FF",
               fontSize: 16,
             }}
           />
@@ -36,7 +36,7 @@ export const SocialMedia = ({}: SocialMediaProps) => {
         >
           <LinkedInIcon
             sx={{
-              color: " rgba(111, 0, 255, 1)",
+              color: " #8C33FF",
               fontSize: 16,
               borderRadius: "100%",
             }}
@@ -52,7 +52,7 @@ export const SocialMedia = ({}: SocialMediaProps) => {
         >
           <InstagramIcon
             sx={{
-              color: " rgba(111, 0, 255, 1)",
+              color: "#8C33FF",
               fontSize: 16,
             }}
           />

@@ -22,8 +22,8 @@ export const ServicesSection = () => {
             <Image
               alt="service-1"
               src="service-1-icon.svg"
-              width={75}
-              height={75}
+              width={65}
+              height={65}
             />
           </div>
           <h3 className="text-xl text-center font-bold">
@@ -41,8 +41,8 @@ export const ServicesSection = () => {
             <Image
               alt="service-2"
               src="service-2-icon.svg"
-              width={75}
-              height={75}
+              width={65}
+              height={65}
             />
           </div>
           <h3 className="text-xl text-center font-bold">
@@ -63,8 +63,8 @@ export const ServicesSection = () => {
             <Image
               alt="service-3"
               src="service-3-icon.svg"
-              width={75}
-              height={75}
+              width={65}
+              height={65}
             />
           </div>
           <h3 className="text-xl font-bold text-center">Dostosowanie do SEO</h3>
@@ -78,8 +78,8 @@ export const ServicesSection = () => {
             <Image
               alt="service-4"
               src="service-4-icon.svg"
-              width={75}
-              height={75}
+              width={65}
+              height={65}
             />
           </div>
           <h3 className="w-full text-xl font-bold text-center">

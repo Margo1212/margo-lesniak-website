@@ -3,13 +3,15 @@ import { SVGProps } from "react";
 export const LogoMin = (props: SVGProps<SVGSVGElement>) => {
   return (
     <svg
-      className="w-full object-cover h-full desktop:w-full"
+      width={13}
+      height={13}
+      className="w-full h-full object-contain"
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
       {...props}
     >
       <g filter="url(#a)">
-        <rect width={134} height={134} fill="#8324FF" rx={65.686} />
+        <rect width={13} height={13} fill="#8324FF" rx={65.686} />
         <path
           stroke="#fff"
           strokeLinecap="round"
@@ -34,8 +36,8 @@ export const LogoMin = (props: SVGProps<SVGSVGElement>) => {
       <defs>
         <filter
           id="a"
-          width={138.393}
-          height={138.393}
+          width={12}
+          height={12}
           x={0}
           y={0}
           colorInterpolationFilters="sRGB"
@@ -56,8 +58,8 @@ export const LogoMin = (props: SVGProps<SVGSVGElement>) => {
         </filter>
         <filter
           id="b"
-          width={84.665}
-          height={26.915}
+          width={13}
+          height={13}
           x={25.546}
           y={77.377}
           colorInterpolationFilters="sRGB"
