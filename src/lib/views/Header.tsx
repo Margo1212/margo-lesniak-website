@@ -1,7 +1,7 @@
+import { Woman } from "@lib/assets/svg/Woman";
 import { Button } from "@lib/components/Button/Button";
 import { SocialMedia } from "@lib/components/SocialMedia/SocialMedia";
 import { Title } from "@lib/components/Title/Title";
-import Image from "next/image";
 
 export const revalidate = 10;
 export type HeaderProps = {};
@@ -28,13 +28,7 @@ export const Header = ({}: HeaderProps) => {
         </div>
       </div>
       <div className="laptop:w-1/2 h-full flex justify-center items-center">
-        <Image
-          className="w-full object-cover h-full desktop:w-full"
-          src="woman.svg"
-          alt="woman"
-          width={450}
-          height={464}
-        />
+        <Woman />
       </div>
     </header>
   );

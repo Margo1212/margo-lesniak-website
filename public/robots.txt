@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.margolesniak.pl
+
+# Sitemaps
+Sitemap: https://www.margolesniak.pl/sitemap.xml
