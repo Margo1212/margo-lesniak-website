@@ -3,8 +3,6 @@ import { Monitor } from "@lib/assets/svg/Monitor";
 import { Tech } from "@lib/assets/svg/Tech";
 import { Button } from "@lib/components/Button/Button";
 
-export const revalidate = 10;
-
 export const WhyMe = () => {
   return (
     <section className="w-full rounded-3xl shadow-[5px_5px_9px_#131519,-5px_-5px_9px_#272d35] px-2 py-5 tablet:px-5 laptop:px-6 laptop:py-20 desktop:px-18 grid grid-cols-1 gap-y-6 laptop:grid-cols-5 gap-x-6">

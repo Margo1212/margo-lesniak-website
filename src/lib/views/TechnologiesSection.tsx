@@ -1,7 +1,5 @@
 import Image from "next/image";
 
-export const revalidate = 10;
-
 export const TechnologiesSection = ({
   technologies,
 }: {

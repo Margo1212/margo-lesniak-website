@@ -1,6 +1,5 @@
 import { Button } from "@lib/components/Button/Button";
 import Image from "next/image";
-export const revalidate = 10;
 
 export const AboutSection = () => {
   return (

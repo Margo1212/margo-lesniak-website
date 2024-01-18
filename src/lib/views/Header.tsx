@@ -3,7 +3,6 @@ import { Button } from "@lib/components/Button/Button";
 import { SocialMedia } from "@lib/components/SocialMedia/SocialMedia";
 import { Title } from "@lib/components/Title/Title";
 
-export const revalidate = 10;
 export type HeaderProps = {};
 
 export const Header = ({}: HeaderProps) => {

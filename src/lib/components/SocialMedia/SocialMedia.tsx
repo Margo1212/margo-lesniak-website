@@ -3,8 +3,6 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import Link from "next/link";
 
-export const revalidate = 10;
-
 export type SocialMediaProps = {};
 
 export const SocialMedia = ({}: SocialMediaProps) => {

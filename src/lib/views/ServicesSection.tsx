@@ -1,8 +1,6 @@
 import { Button } from "@lib/components/Button/Button";
 import Image from "next/image";
 
-export const revalidate = 10;
-
 export const ServicesSection = () => {
   return (
     <section className="relative  flex flex-col laptop:py-14 items-center justify-center gap-y-20 px-5 tablet:px-0 ">
