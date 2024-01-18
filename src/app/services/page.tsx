@@ -9,6 +9,25 @@ import TimelineDot from "@mui/lab/TimelineDot";
 import TimelineItem from "@mui/lab/TimelineItem";
 import TimelineSeparator from "@mui/lab/TimelineSeparator";
 
+export const generateMetadata = async () => {
+  return {
+    title: "Margo Leśniak | Usługi",
+    description:
+      "Kompleksowe usługi tworzenia nowoczesnych stron internetowych, oparte na zaawansowanych technologiach.Skupiam się na dostarczaniu innowacyjnych, responsywnych i wydajnych rozwiązań. Ze mną każda strona staje się unikatowym doświadczeniem online. Sprawdź, jak mogę wzmocnić Twój wizerunek w sieci!",
+    keywords: [
+      "Tworzenie responsywnych stron internetowych z Next.js i Strapi CMS",
+      "Projektowanie responsywnych stron",
+      "Personalizowane rozwiązania webowe oparte na TypeScript",
+      "Tworzenie zoptymalizowanych stron pod kątem SEO z Next.js",
+      "Responsywne projektowanie stron",
+      "cms",
+      "Strony internetowe oparte na Jamstack z użyciem Next.js i Strapi",
+      "Zoptymalizowane strony dla SEO",
+      "Strony internetowe dla firmy kraków",
+    ],
+  };
+};
+
 export default async function Services() {
   const technologiesData = await getTechnologies();
   const technologies = technologiesData[0]?.tech;

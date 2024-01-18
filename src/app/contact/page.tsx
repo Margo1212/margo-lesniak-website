@@ -3,12 +3,25 @@ import { ContactForm } from "@lib/components/ContactForm/ContactForm";
 import { Title } from "@lib/components/Title/Title";
 import ContactPhoneIcon from "@mui/icons-material/ContactPhone";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
-import type { Metadata } from "next";
-export const revalidate = 10;
 
-export const metadata: Metadata = {
-  title: "",
-  description: "",
+export const generateMetadata = async () => {
+  return {
+    title:
+      "Margo Leśniak | Skontaktuj się ze mną - Tworzenie Nowoczesnych Stron z Next.js, Strapi CMS i TypeScript",
+    description:
+      "Chcesz stworzyć nowoczesną stronę internetową opartą na Next.js, Strapi CMS i TypeScript? Skontaktuj się ze mną. Oferuę kompleksowe usługi projektowania responsywnych stron, programowania front-end z użyciem TypeScript oraz integracji z zaawansowanym Strapi CMS. Zrealizujmy razem Twój pomysł online! Sprawdź, jak mogę wzmocnić obecność Twojej marki w sieci.",
+    keywords: [
+      "Wsparcie SEO dla lokalnych firm z Krakowa",
+      "Projektowanie responsywnych stron w Krakowie",
+      "Zapytaj o ofertę na tworzenie stron internetowych w Krakowie",
+      "Tworzenie zoptymalizowanych stron pod kątem SEO z Next.js",
+      "Responsywne projektowanie stron",
+      "Skontaktuj się z nami, aby omówić projekty online dla Krakowa",
+      "Strony internetowe oparte na Jamstack z użyciem Next.js i Strapi CMS",
+      "Zoptymalizowane strony dla SEO",
+      "Strony internetowe dla firmy kraków",
+    ],
+  };
 };
 
 export default async function Page() {
