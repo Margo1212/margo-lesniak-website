@@ -1,30 +1,5 @@
-import { postReducer } from "app/actions";
-import { request } from "app/api";
-import { unstable_cache } from "next/cache";
+import { getPostBySlug } from "app/api/posts";
 import Image from "next/image";
-import qs from "qs";
-
-export const getPostBySlug = unstable_cache(
-  async ({ slug }: any) => {
-    const query = qs.stringify(
-      {
-        filters: {
-          slug: {
-            $eq: slug,
-          },
-        },
-        populate: ["image", "author"],
-      },
-      {
-        encodeValuesOnly: true,
-      }
-    );
-    const res = await request(`posts?${query}`);
-    const rawPost = res?.data[0];
-    return postReducer(rawPost);
-  },
-  ["posts", "getPostBySlug", "blog"]
-);
 
 export const generateMetadata = async () => {
   return {

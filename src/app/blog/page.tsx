@@ -1,28 +1,8 @@
 import { NextBreadcrumb } from "@lib/components/Breadcrumbs/Breadcrumbs";
 import { Title } from "@lib/components/Title/Title";
-import { postReducer } from "app/actions";
-import { request } from "app/api";
-import { unstable_cache } from "next/cache";
-// import { getPosts } from "app/api/posts";
+import { getPosts } from "app/api/posts";
 import Image from "next/image";
 import Link from "next/link";
-import qs from "qs";
-
-export const getPosts = unstable_cache(async () => {
-  const query = qs.stringify(
-    {
-      populate: ["title", "description", "image", "author", "author.image"],
-    },
-    {
-      encodeValuesOnly: true,
-    }
-  );
-  const res = await request(`posts?${query}`);
-  const rawPosts = res?.data;
-  const posts = rawPosts?.map((post: any) => postReducer(post));
-
-  return posts;
-}, ["posts", "getPosts", "blog"]);
 
 export const generateMetadata = async () => {
   return {
