@@ -1,4 +1,4 @@
-import { techReducer } from "app/api";
+import { techReducer } from "app/actions";
 import qs from "qs";
 import { request } from ".";
 

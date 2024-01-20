@@ -26,6 +26,26 @@ export const getPostBySlug = unstable_cache(
   ["posts", "getPostBySlug", "blog"]
 );
 
+export const generateMetadata = async () => {
+  return {
+    title:
+      "Margo Leśniak | Blog o Nowoczesnych Stronach Internetowych - Next.js, Strapi CMS, TypeScript",
+    description:
+      "Przeczytaj najnowsze artykuły na moim blogu dotyczące tworzenia nowoczesnych stron internetowych w oparciu o technologie takie jak Next.js, Strapi CMS i TypeScript. Dzielę się wiedzą, doświadczeniem i trendami branżowymi, aby pomóc Ci lepiej zrozumieć świat projektowania responsywnych interfejsów, programowania front-end oraz efektywnego korzystania z zaawansowanych narzędzi, takich jak Strapi. Rozwijaj się razem ze mną w świecie nowoczesnych technologii webowych.",
+    keywords: [
+      "Blog dla pasjonatów tworzenia stron w architekturze Jamstack",
+      "Next.js",
+      "Trendy w projektowaniu stron",
+      "Jamstack",
+      "Nowośći front-end",
+      "Aktualności technologiczne",
+      "Strony internetowe oparte na Jamstack z użyciem Next.js i Strapi CMS",
+      "Zoptymalizowane strony dla SEO",
+      "Strony internetowe dla firmy kraków",
+    ],
+  };
+};
+
 export default async function Page({ params }: { params: { slug: string } }) {
   const post = await getPostBySlug({ slug: params.slug }).catch((err) =>
     console.error(err)
