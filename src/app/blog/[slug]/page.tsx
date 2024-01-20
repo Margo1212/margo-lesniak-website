@@ -1,5 +1,5 @@
 import { postReducer } from "app/actions";
-import { request } from "app/api/index";
+import { request } from "app/api";
 import { unstable_cache } from "next/cache";
 import Image from "next/image";
 import qs from "qs";
@@ -19,7 +19,7 @@ export const getPostBySlug = unstable_cache(
         encodeValuesOnly: true,
       }
     );
-    const res = await request(`posts?${query}`, { tags: [slug] });
+    const res = await request(`posts?${query}`);
     const rawPost = res?.data[0];
     return postReducer(rawPost);
   },
