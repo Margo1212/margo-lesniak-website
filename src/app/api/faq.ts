@@ -1,4 +1,4 @@
-import { faqReducer } from "@lib/utils";
+import { faqReducer } from "app/actions";
 import qs from "qs";
 import { request } from ".";
 

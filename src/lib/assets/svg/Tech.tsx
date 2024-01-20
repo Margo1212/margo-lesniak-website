@@ -6,7 +6,7 @@ export const Tech = (props: any) => (
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
-    <g clip-path="url(#clip0_379_54)">
+    <g clipPath="url(#clip0_379_54)">
       <path
         d="M31.25 1.25H3.75C2.36929 1.25 1.25 2.36929 1.25 3.75V31.25C1.25 32.6308 2.36929 33.75 3.75 33.75H31.25C32.6308 33.75 33.75 32.6308 33.75 31.25V3.75C33.75 2.36929 32.6308 1.25 31.25 1.25Z"
         stroke="#8C33FF"

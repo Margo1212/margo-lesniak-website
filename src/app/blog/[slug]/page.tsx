@@ -1,11 +1,35 @@
-import { getPostBySlug } from "@lib/data/posts";
+import { postReducer } from "app/actions";
+import { request } from "app/api/index";
+import { unstable_cache } from "next/cache";
 import Image from "next/image";
+import qs from "qs";
+
+export const getPostBySlug = unstable_cache(
+  async ({ slug }: any) => {
+    const query = qs.stringify(
+      {
+        filters: {
+          slug: {
+            $eq: slug,
+          },
+        },
+        populate: ["image", "author"],
+      },
+      {
+        encodeValuesOnly: true,
+      }
+    );
+    const res = await request(`posts?${query}`, { tags: [slug] });
+    const rawPost = res?.data[0];
+    return postReducer(rawPost);
+  },
+  ["posts", "getPostBySlug", "blog"]
+);
 
 export default async function Page({ params }: { params: { slug: string } }) {
   const post = await getPostBySlug({ slug: params.slug }).catch((err) =>
     console.error(err)
   );
-
   if (!post) {
     return <div>Post not found</div>;
   }
@@ -16,12 +40,10 @@ export default async function Page({ params }: { params: { slug: string } }) {
           <h2 className="text-2xl text-white font-normal text-center laptop:text-4xl laptop:text-left ">
             {post.title}
           </h2>
-
           <p className="laptop:text-base text-sm text-text">
             {post.description}
           </p>
         </div>
-
         {post.textblock?.map((text: any) =>
           text.type === "heading" ? (
             <div key={text.id}>

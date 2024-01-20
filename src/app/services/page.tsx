@@ -1,6 +1,5 @@
 import { NextBreadcrumb } from "@lib/components/Breadcrumbs/Breadcrumbs";
 import { Title } from "@lib/components/Title/Title";
-import { getTechnologies } from "@lib/data/technologies";
 import { TechnologiesSection } from "@lib/views/TechnologiesSection";
 import Timeline from "@mui/lab/Timeline";
 import TimelineConnector from "@mui/lab/TimelineConnector";
@@ -8,6 +7,7 @@ import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineDot from "@mui/lab/TimelineDot";
 import TimelineItem from "@mui/lab/TimelineItem";
 import TimelineSeparator from "@mui/lab/TimelineSeparator";
+import { getTechnologies } from "app/api/technologies";
 
 export const generateMetadata = async () => {
   return {

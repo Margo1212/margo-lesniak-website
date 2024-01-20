@@ -1,4 +1,4 @@
-import { techReducer } from "@lib/utils";
+import { techReducer } from "app/api";
 import qs from "qs";
 import { request } from ".";
 

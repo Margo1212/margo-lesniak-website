@@ -2,7 +2,7 @@ import { NextBreadcrumb } from "@lib/components/Breadcrumbs/Breadcrumbs";
 import { Title } from "@lib/components/Title/Title";
 import Image from "next/image";
 import Link from "next/link";
-import { projects } from "../../lib/data/projects";
+import { projects } from "../api/projects";
 
 export default function Projects() {
   return (
