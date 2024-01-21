@@ -2,11 +2,13 @@ import type { Config } from "tailwindcss";
 
 const config: Config = {
   content: [
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/lib/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/lib/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "../frontend/node_modules/@material-tailwind/react/components/**/*.{js,ts,jsx,tsx}",
-    "../frontend/node_modules/@material-tailwind/react/theme/components/**/*.{js,ts,jsx,tsx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/lib/**/*.{js,ts,jsx,tsx,mdx}",
+
+    "./app/ui/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "../node_modules/@material-tailwind/react/components/**/*.{js,ts,jsx,tsx}",
+    "../node_modules/@material-tailwind/react/theme/components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     screens: {

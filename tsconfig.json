@@ -19,14 +19,9 @@
         "name": "next"
       }
     ],
-    "baseUrl": "./src",
+
     "paths": {
-      "@lib/*": ["lib/*"],
-      "@components/*": ["lib/components/*"],
-      "@pages/*": ["app/pages/*"],
-      "@svg/*": ["lib/assets/svg/*"],
-      "@views": ["lib/views/*"],
-      "react": ["./node_modules/@types/react"]
+      "@/*": ["./app/*"]
     }
   },
   "include": [
