@@ -11,8 +11,8 @@ export const SocialMedia = ({}: SocialMediaProps) => {
       <li>
         <Link
           className="w-8 h-8 flex justify-center items-center  border-2 border-text text-text hover:border-primary hover:text-primary rounded-full transition-colors duration-300"
-          aria-label="Link to instagram"
-          href={"https://www.instagram.com/art.lady_clinic/"}
+          aria-label="Link to github"
+          href={"https://github.com/Margo1212"}
           target="_blank"
         >
           <GitHubIcon
@@ -26,9 +26,7 @@ export const SocialMedia = ({}: SocialMediaProps) => {
         <Link
           className="w-8 h-8 flex justify-center items-center  border-2 border-text text-text hover:border-primary hover:text-primary rounded-full transition-colors duration-300"
           aria-label="Link to booksy"
-          href={
-            "https://booksy.com/pl-pl/81163_art-lady_brwi-i-rzesy_8820_krakow#ba_s=sr_1"
-          }
+          href={"https://www.linkedin.com/in/marharyta-lesniak/"}
           target="_blank"
         >
           <LinkedInIcon
@@ -43,7 +41,7 @@ export const SocialMedia = ({}: SocialMediaProps) => {
         <Link
           className="w-8 h-8 flex justify-center items-center  border-2  border-text text-text hover:border-primary hover:text-primary rounded-full transition-colors duration-300"
           aria-label="Link to instagram"
-          href={"https://www.instagram.com/art.lady_clinic/"}
+          href={""}
           target="_blank"
         >
           <InstagramIcon

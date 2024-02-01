@@ -5,35 +5,47 @@ export const Footer = () => {
   const now = new Date();
   const year = now.getFullYear();
   return (
-    <footer className="w-full   bg-main-bg px-5">
-      <div className="bg-main-bg shadow-[inset_5px_5px_9px_#131519,inset_-5px_-5px_9px_#272d35] m-auto rounded-t-3xl flex flex-col laptop:grid-cols-2 gap-x-5 laptop:gap-x-0 justify-between tablet:grid tablet:items-center px-10 laptop:px-16 ">
+    <footer className="w-full bg-main-bg px-5">
+      <div className="bg-main-bg shadow-[inset_5px_5px_9px_#131519,inset_-5px_-5px_9px_#272d35] m-auto rounded-t-3xl flex flex-col laptop:grid-cols-3 gap-x-5 laptop:gap-x-0 justify-between laptop:grid tablet:items-center px-10 laptop:px-16 ">
         <div className="flex flex-col gap-y-3 py-6">
           <SocialMedia />
         </div>
 
-        <ul className="col-span-3 px-8 text-white font-medium hidden my-5 rounded-full w-full shadow-[5px_5px_9px_#131519,-5px_-5px_9px_#272d35]    space-x-5 align-middle laptop:flex flex-row items-center justify-between">
+        <ul className="col-span-3 px-8 py-4 text-white font-medium hidden my-5 rounded-full w-full shadow-[5px_5px_9px_#131519,-5px_-5px_9px_#272d35]    space-x-5 align-middle laptop:flex flex-row items-center justify-between">
           <li>
-            <Link aria-label="Link to home" href="/">
+            <Link
+              className="hover:text-secondary focus:text-secondary focus:underline transition-colors duration-300 "
+              aria-label="Link to home"
+              href="/"
+            >
               Strona Główna
             </Link>
           </li>
+
           <li>
-            <Link aria-label="Link to about page" href="/about">
-              O mnie
-            </Link>
-          </li>
-          <li>
-            <Link aria-label="Link to gallery" href="/offer">
+            <Link
+              className="hover:text-secondary focus:text-secondary focus:underline transition-colors duration-300 "
+              aria-label="Link to gallery"
+              href="/services"
+            >
               Usługi
             </Link>
           </li>
           <li>
-            <Link aria-label="Link to news page" href="#">
+            <Link
+              className="hover:text-secondary focus:text-secondary focus:underline transition-colors duration-300 "
+              aria-label="Link to news page"
+              href="/blog"
+            >
               Blog
             </Link>
           </li>
           <li>
-            <Link aria-label="Link to news page" href="#">
+            <Link
+              className="hover:text-secondary focus:text-secondary focus:underline transition-colors duration-300 "
+              aria-label="Link to news page"
+              href="/projects"
+            >
               Projekty
             </Link>
           </li>

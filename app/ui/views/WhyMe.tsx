@@ -15,10 +15,11 @@ export const WhyMe = () => {
           oferując profesjonalne wsparcie dla Twojego projektu online.
         </p>
         <Button
-          text={"Zobacz więcej"}
+          text={"Otrzymaj Ofertę 🚀"}
           bg={"primary"}
-          href={""}
-          styles="w-36 px-4 py-2"
+          target="_blank"
+          href={"https://tally.so/r/w2PGj9"}
+          styles="w-64 px-4 py-2"
         />
       </div>
       <div className="shadow-[inset_5px_5px_9px_#131519,inset_-5px_-5px_9px_#272d35] rounded-lg  space-y-3 px-6 py-5">

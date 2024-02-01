@@ -7,9 +7,17 @@ export type ButtonProps = {
   bg: "primary" | "secondary";
   href: string;
   styles?: string;
+  target?: string;
 };
 
-export const Button = ({ href, text, icon, bg, styles }: ButtonProps) => {
+export const Button = ({
+  href,
+  text,
+  icon,
+  bg,
+  styles,
+  target,
+}: ButtonProps) => {
   const background =
     bg === "primary"
       ? "bg-gradient-to-b from-[#8C33FF] to-[#37007E] "
@@ -18,7 +26,8 @@ export const Button = ({ href, text, icon, bg, styles }: ButtonProps) => {
   return (
     <Link
       href={href}
-      className={`${background} text-white text-center tracking-wide transition ease-in-out duration-300 shadow-md rounded-full font-semibold ${styles}`}
+      target={target}
+      className={`${background} text-white text-center tracking-wide transition ease-in-out duration-300 shadow-md rounded-full font-semibold ${styles} hover:scale-105`}
     >
       {text}
       {icon}

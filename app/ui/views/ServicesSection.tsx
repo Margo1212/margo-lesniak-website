@@ -20,8 +20,8 @@ export const ServicesSection = () => {
       </div>
 
       <div className="w-full grid tablet:grid-cols-2 gap-y-8 laptop:grid-cols-4 gap-x-8">
-        <div className=" hover:bg-[#282930]/20 duration-200 text-white min-h-[429px] px-4 py-8 flex flex-col items-center gap-y-5  rounded-3xl shadow-[5px_5px_9px_#131519,-5px_-5px_9px_#272d35]">
-          <div className="text-primary shadow-[inset_5px_5px_9px_#131519,inset_-5px_-5px_9px_#272d35] p-8 rounded-xl">
+        <div className=" hover:bg-[#282930]/20 duration-200 text-white min-h-[429px] px-4 py-8 flex flex-col items-center gap-y-5  rounded-3xl shadow-[5px_5px_9px_#131519,-5px_-5px_9px_#272d35] hover:-translate-y-3">
+          <div className="text-primary shadow-[inset_5px_5px_9px_#131519,inset_-5px_-5px_9px_#272d35] p-8 rounded-xl ">
             <MdOutlineDevicesOther
               style={{ fontSize: "48px", color: "#8C33FF" }}
             />
@@ -36,7 +36,7 @@ export const ServicesSection = () => {
             <li> Tworzenie stron korporacyjnych, portfolio, blogów.</li>
           </ul>
         </div>
-        <div className="hover:bg-[#282930]/20 duration-200 shadow-[5px_5px_9px_#131519,-5px_-5px_9px_#272d35] rounded-3xl  text-white min-h-[429px] px-4 py-8 flex flex-col items-center gap-y-5">
+        <div className="hover:bg-[#282930]/20 duration-200 shadow-[5px_5px_9px_#131519,-5px_-5px_9px_#272d35] rounded-3xl  text-white min-h-[429px] px-4 py-8 flex flex-col items-center gap-y-5 hover:-translate-y-3">
           <div className="text-primary shadow-[inset_5px_5px_9px_#131519,inset_-5px_-5px_9px_#272d35] p-8 rounded-xl">
             <FaRegListAlt style={{ fontSize: "48px", color: "#8C33FF" }} />
           </div>
@@ -53,7 +53,7 @@ export const ServicesSection = () => {
             </li>
           </ul>
         </div>
-        <div className="hover:bg-[#282930]/20 duration-200 shadow-[5px_5px_9px_#131519,-5px_-5px_9px_#272d35] rounded-3xl text-white  min-h-[429px] px-4 py-8 flex flex-col items-center gap-y-5">
+        <div className="hover:bg-[#282930]/20 duration-200 shadow-[5px_5px_9px_#131519,-5px_-5px_9px_#272d35] rounded-3xl text-white  min-h-[429px] px-4 py-8 flex flex-col items-center gap-y-5 hover:-translate-y-3">
           <div className="text-primary shadow-[inset_5px_5px_9px_#131519,inset_-5px_-5px_9px_#272d35] p-8 rounded-xl">
             <MdOutlineScreenSearchDesktop
               style={{ fontSize: "48px", color: "#8C33FF" }}
@@ -65,7 +65,7 @@ export const ServicesSection = () => {
             <li>Implementacja tagów meta, mapy witryny itp.</li>
           </ul>
         </div>
-        <div className="hover:bg-[#282930]/20 duration-200 shadow-[5px_5px_9px_#131519,-5px_-5px_9px_#272d35] rounded-3xl  text-white  min-h-[429px] px-4 py-8 flex flex-col items-center gap-y-5">
+        <div className="hover:bg-[#282930]/20 duration-200 shadow-[5px_5px_9px_#131519,-5px_-5px_9px_#272d35] rounded-3xl  text-white  min-h-[429px] px-4 py-8 flex flex-col items-center gap-y-5 hover:-translate-y-3">
           <div className="text-primary shadow-[inset_5px_5px_9px_#131519,inset_-5px_-5px_9px_#272d35] p-8 rounded-xl">
             <MdOutlineSupport style={{ fontSize: "48px", color: "#8C33FF" }} />
           </div>
@@ -84,9 +84,9 @@ export const ServicesSection = () => {
       </div>
       <Button
         styles="px-6 py-3"
-        href="/about"
+        href="/services"
         bg="primary"
-        text="Zobacz więcej"
+        text="Zobacz więcej 👩‍🚀"
       />
     </section>
   );

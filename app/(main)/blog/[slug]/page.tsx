@@ -53,7 +53,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
     return <div>Post not found</div>;
   }
   return (
-    <div className="relative flex gap-4 px-5 py-4 laptop:py-16  overflow-clip">
+    <div className="relative flex flex-col-reverse laptop:flex-row gap-4 px-5 py-4 laptop:py-16  overflow-clip">
       <div className="laptop:w-1/2 space-y-5">
         <div className="space-y-5">
           <h2 className="text-2xl text-white font-normal text-center laptop:text-4xl laptop:text-left ">

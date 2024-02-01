@@ -71,10 +71,13 @@ export default async function Page() {
       />
       <div className="grid laptop:grid-cols-3 laptop:gap-x-14 content-center tablet:grid-cols-2 tablet:gap-x-12 grid-cols-1 desktop:gap-x-32 gap-y-14">
         {posts?.map((post: any) => (
-          <div key={post.id} className="flex flex-col gap-y-5">
+          <div
+            key={post.id}
+            className="flex flex-col gap-y-5 desktop:w-[350px] "
+          >
             <div className="w-full h-[250px]">
               <Image
-                className="rounded-lg h-full"
+                className="rounded-lg h-full object-cover"
                 src={post?.image.data[0]?.attributes?.url}
                 alt={post?.image.data[0]?.attributes?.alternativeText}
                 width={post?.image.data[0]?.attributes?.width}

@@ -27,9 +27,9 @@ export const Header = ({}: HeaderProps) => {
         <div className="laptop:space-x-5 space-y-5 laptop:space-y-0 flex flex-col laptop:flex-row ">
           <Button
             styles="px-6 py-3"
-            text="Więcej o tym co robię"
+            text="Dowiedz się Więcej"
             bg="secondary"
-            href="#"
+            href="/services"
           />
           <SocialMedia />
         </div>

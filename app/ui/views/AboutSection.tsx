@@ -36,9 +36,9 @@ export const AboutSection = () => {
 
         <Button
           styles="px-6 py-3"
-          href="/about"
+          href="/projects"
           bg="primary"
-          text="Zobacz więcej"
+          text="Zobacz moje projekty 💚"
         />
       </div>
     </section>

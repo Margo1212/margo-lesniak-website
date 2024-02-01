@@ -88,6 +88,16 @@ export default async function Page() {
             </li>
           </ul>
           <p className="text-white">
+            Jeżeli chcesz uzyskać darmową wycenę swojego projektu, wypełnij{" "}
+            <Link
+              className="text-primary underline"
+              href={"https://tally.so/r/w2PGj9"}
+            >
+              kwestionariusz
+            </Link>
+            .
+          </p>
+          <p className="text-white">
             Jestem gotowa pomóc Ci w osiągnięciu celów online i stworzeniu
             wyjątkowej obecności w sieci. Czekam na Twój kontakt!💜
           </p>
