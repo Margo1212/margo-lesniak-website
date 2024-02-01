@@ -10,14 +10,13 @@ export const SocialMedia = ({}: SocialMediaProps) => {
     <ul className={` space-x-5 flex justify-center items-center`}>
       <li>
         <Link
-          className="w-8 h-8 flex justify-center items-center  border-2 border-primary rounded-full"
+          className="w-8 h-8 flex justify-center items-center  border-2 border-text text-text hover:border-primary hover:text-primary rounded-full"
           aria-label="Link to instagram"
           href={"https://www.instagram.com/art.lady_clinic/"}
           target="_blank"
         >
           <GitHubIcon
             sx={{
-              color: "#8C33FF",
               fontSize: 16,
             }}
           />
@@ -25,7 +24,7 @@ export const SocialMedia = ({}: SocialMediaProps) => {
       </li>
       <li>
         <Link
-          className="w-8 h-8 flex justify-center items-center  border-2 border-primary rounded-full"
+          className="w-8 h-8 flex justify-center items-center  border-2 border-text text-text hover:border-primary hover:text-primary rounded-full"
           aria-label="Link to booksy"
           href={
             "https://booksy.com/pl-pl/81163_art-lady_brwi-i-rzesy_8820_krakow#ba_s=sr_1"
@@ -34,7 +33,6 @@ export const SocialMedia = ({}: SocialMediaProps) => {
         >
           <LinkedInIcon
             sx={{
-              color: " #8C33FF",
               fontSize: 16,
               borderRadius: "100%",
             }}
@@ -43,14 +41,13 @@ export const SocialMedia = ({}: SocialMediaProps) => {
       </li>
       <li>
         <Link
-          className="w-8 h-8 flex justify-center items-center  border-2 border-primary rounded-full"
+          className="w-8 h-8 flex justify-center items-center  border-2  border-text text-text hover:border-primary hover:text-primary rounded-full"
           aria-label="Link to instagram"
           href={"https://www.instagram.com/art.lady_clinic/"}
           target="_blank"
         >
           <InstagramIcon
             sx={{
-              color: "#8C33FF",
               fontSize: 16,
             }}
           />

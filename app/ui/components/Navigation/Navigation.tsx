@@ -21,7 +21,11 @@ const Navigation = () => {
 
       <ul className="hidden text-white font-normal  space-x-8 align-middle py-5 laptop:flex flex-row justify-between tracking-wide">
         <li>
-          <Link aria-label="Link to home" href="/">
+          <Link
+            className="hover:text-secondary focus:text-secondary focus:underline transition-colors duration-300 "
+            aria-label="Link to home"
+            href="/"
+          >
             Strona Główna
           </Link>
         </li>
@@ -29,19 +33,31 @@ const Navigation = () => {
           <Link aria-label="Link to about page" href="/about">
             O mnie
           </Link>
-        </li>
+        </li>*/}
         <li>
-          <Link aria-label="Link to gallery" href="/services">
+          <Link
+            className="hover:text-secondary focus:text-secondary focus:underline transition-colors duration-300 "
+            aria-label="Link to gallery"
+            href="/services"
+          >
             Usługi
           </Link>
-        </li> */}
+        </li>
         <li>
-          <Link aria-label="Link to news page" href="/blog">
+          <Link
+            className="hover:text-secondary focus:text-secondary focus:underline transition-colors duration-300 "
+            aria-label="Link to news page"
+            href="/blog"
+          >
             Blog
           </Link>
         </li>
         <li>
-          <Link aria-label="Link to projects " href="/projects">
+          <Link
+            className="hover:text-secondary focus:text-secondary focus:underline transition-colors duration-300 "
+            aria-label="Link to projects "
+            href="/projects"
+          >
             Projekty
           </Link>
         </li>

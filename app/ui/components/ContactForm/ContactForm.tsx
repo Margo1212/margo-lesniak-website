@@ -1,5 +1,4 @@
 "use client";
-
 import { Input } from "@/ui/components/Input/Input";
 import { TextArea } from "@/ui/components/TextArea/TextArea";
 import emailjs from "@emailjs/browser";
@@ -46,13 +45,13 @@ export const ContactForm = () => {
       try {
         emailjs
           .send(
-            "service_0kn1qub",
-            "template_xu63crp",
+            "service_96y79wg",
+            "template_wn4vxb2",
             values,
-            "mdpB1suhzwQ6cJX0U"
+            "xxxIaxYoLEn78ySPn"
           )
           .then(() => {
-            setSubmitting(false);
+            setSubmitting(true);
             alert("Message sended");
             window.location.reload();
           });

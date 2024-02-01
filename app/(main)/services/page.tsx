@@ -1,13 +1,9 @@
-import Timeline from "@mui/lab/Timeline";
-import TimelineConnector from "@mui/lab/TimelineConnector";
-import TimelineContent from "@mui/lab/TimelineContent";
-import TimelineDot from "@mui/lab/TimelineDot";
-import TimelineItem from "@mui/lab/TimelineItem";
-import TimelineSeparator from "@mui/lab/TimelineSeparator";
-import { getTechnologies } from "../lib/technologies";
-import { NextBreadcrumb } from "../ui/components/Breadcrumbs/Breadcrumbs";
-import { Title } from "../ui/components/Title/Title";
-import { TechnologiesSection } from "../ui/views/TechnologiesSection";
+import { getStages } from "@/lib/stages";
+import { StagesSection } from "@/ui/views/StagesSection";
+import { getTechnologies } from "@lib/technologies";
+import { NextBreadcrumb } from "@ui/components/Breadcrumbs/Breadcrumbs";
+import { Title } from "@ui/components/Title/Title";
+import { TechnologiesSection } from "@ui/views/TechnologiesSection";
 
 export const generateMetadata = async () => {
   return {
@@ -30,6 +26,7 @@ export const generateMetadata = async () => {
 
 export default async function Services() {
   const technologiesData = await getTechnologies();
+  const stagesData = await getStages();
   const technologies = technologiesData[0]?.tech;
   return (
     <section className=" px-5 laptop:px-24 gap-3 pt-10 pb-32 space-y-10">
@@ -52,29 +49,7 @@ export default async function Services() {
         capitalizeLinks
       />
       <TechnologiesSection technologies={technologies} />
-
-      <Timeline>
-        <TimelineItem>
-          <TimelineSeparator>
-            <TimelineDot />
-            <TimelineConnector />
-          </TimelineSeparator>
-          <TimelineContent>Eat</TimelineContent>
-        </TimelineItem>
-        <TimelineItem>
-          <TimelineSeparator>
-            <TimelineDot />
-            <TimelineConnector />
-          </TimelineSeparator>
-          <TimelineContent>Code</TimelineContent>
-        </TimelineItem>
-        <TimelineItem>
-          <TimelineSeparator>
-            <TimelineDot />
-          </TimelineSeparator>
-          <TimelineContent>Sleep</TimelineContent>
-        </TimelineItem>
-      </Timeline>
+      <StagesSection stages={stagesData} />
     </section>
   );
 }

@@ -9,7 +9,7 @@ export const FaqSection = ({ faq }: FaqSectionProps) => {
   return (
     <section className="relative flex flex-col laptop:py-14 items-center justify-center px-5 tablet:px-0 gap-y-5 py-20">
       <h2 className="text-4xl text-white font-medium">FAQ</h2>
-      <p className="text-text text-center font-base w-1/2">
+      <p className="text-text text-center font-base  laptop:w-3/4">
         Cieszę się, że jesteś tu! Poniżej znajdziesz odpowiedzi na najczęstsze
         pytania dotyczące tworzenia stron internetowych. Bez względu na to, czy
         jesteś nowym przedsiębiorcą, entuzjastą technologii, czy klientem z

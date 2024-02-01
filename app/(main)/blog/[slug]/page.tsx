@@ -1,6 +1,32 @@
+import { request } from "@/lib";
+import { postReducer } from "@/lib/utils/reducers";
+import { getPostBySlug } from "@lib/posts";
 import Image from "next/image";
+import qs from "qs";
 import { Suspense } from "react";
-import { getPostBySlug } from "../../lib/posts";
+
+export async function generateStaticParams() {
+  const query = qs.stringify(
+    {
+      populate: ["title", "description", "image", "author", "author.image"],
+    },
+    {
+      encodeValuesOnly: true,
+    }
+  );
+  const res = await request(`posts?${query}`);
+  const rawPosts = res?.data;
+  const posts = rawPosts?.map((post: any) => postReducer(post));
+
+  return posts.map(
+    (post: any) => (
+      console.log(post),
+      {
+        slug: post.slug,
+      }
+    )
+  );
+}
 
 export const generateMetadata = async () => {
   return {

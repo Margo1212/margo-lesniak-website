@@ -49,7 +49,7 @@ export default function HamburgerMenu() {
 
       <Drawer
         PaperProps={{
-          sx: { width: "30%" },
+          sx: { width: "40%" },
         }}
         anchor="right"
         open={state}
@@ -61,7 +61,7 @@ export default function HamburgerMenu() {
             height: 1,
 
             backgroundColor: "#1D2127",
-            opacity: "1",
+            opacity: "0.1",
           }}
         >
           <IconButton onClick={toggleDrawer(false)} sx={{ mb: 2 }}>
@@ -79,12 +79,12 @@ export default function HamburgerMenu() {
                 <Link aria-label="Link to about page" href="/about">
                   O mnie
                 </Link>
-              </li>
+              </li>*/}
               <li>
                 <Link aria-label="Link to gallery" href="/services">
-                  Oferta
+                  Usługi
                 </Link>
-              </li> */}
+              </li>
               <li>
                 <Link aria-label="Link to news page" href="/blog">
                   Blog

@@ -1,6 +1,6 @@
 import qs from "qs";
 import { request } from ".";
-import { faqReducer } from "../actions";
+import { faqReducer } from "./utils/reducers";
 
 export const getFaq = async () => {
   const queryParams = qs.stringify(

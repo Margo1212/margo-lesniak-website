@@ -21,7 +21,11 @@
     ],
 
     "paths": {
-      "@/*": ["./app/*"]
+      "@/*": ["./app/*"],
+      "@components/*": ["./app/ui/components/*"],
+      "@lib/*": ["./app/lib/*"],
+      "@ui/*": ["./app/ui/*"],
+      "@views/*": ["./app/ui/views/*"]
     }
   },
   "include": [

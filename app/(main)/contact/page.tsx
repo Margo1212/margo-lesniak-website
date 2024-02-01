@@ -1,8 +1,8 @@
+import { NextBreadcrumb } from "@components/Breadcrumbs/Breadcrumbs";
+import { ContactForm } from "@components/ContactForm/ContactForm";
+import { Title } from "@components/Title/Title";
 import ContactPhoneIcon from "@mui/icons-material/ContactPhone";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
-import { NextBreadcrumb } from "../ui/components/Breadcrumbs/Breadcrumbs";
-import { ContactForm } from "../ui/components/ContactForm/ContactForm";
-import { Title } from "../ui/components/Title/Title";
 
 export const generateMetadata = async () => {
   return {

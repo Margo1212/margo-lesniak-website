@@ -12,3 +12,8 @@ export const techReducer = (rawTech: any) => {
   const tech = { ...rawTech?.attributes, id: rawTech?.id };
   return tech;
 };
+
+export const stagesReducer = (rawStages: any) => {
+  const stage = { ...rawStages?.attributes, id: rawStages?.id };
+  return stage;
+};

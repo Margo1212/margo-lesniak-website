@@ -23,7 +23,7 @@ export const NextBreadcrumb = ({
   capitalizeLinks,
 }: TBreadCrumbProps) => {
   const paths = usePathname();
-  console.log(paths);
+
   const pathNames = paths.split("/").filter((path) => path);
 
   return (

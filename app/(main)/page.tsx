@@ -1,9 +1,9 @@
-import { getFaq } from "./lib/faq";
-import { AboutSection } from "./ui/views/AboutSection";
-import { FaqSection } from "./ui/views/FaqSection";
-import { Header } from "./ui/views/Header";
-import { ServicesSection } from "./ui/views/ServicesSection";
-import { WhyMe } from "./ui/views/WhyMe";
+import { getFaq } from "@lib/faq";
+import { AboutSection } from "@views/AboutSection";
+import { FaqSection } from "@views/FaqSection";
+import { Header } from "@views/Header";
+import { ServicesSection } from "@views/ServicesSection";
+import { WhyMe } from "@views/WhyMe";
 
 export const generateMetadata = async () => {
   return {

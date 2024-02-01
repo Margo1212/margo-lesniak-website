@@ -1,10 +1,10 @@
+import { NextBreadcrumb } from "@components/Breadcrumbs/Breadcrumbs";
+import { Title } from "@components/Title/Title";
+import { postReducer } from "@lib/utils/reducers";
 import Image from "next/image";
 import Link from "next/link";
 import qs from "qs";
-import { postReducer } from "../actions";
-import { request } from "../lib";
-import { NextBreadcrumb } from "../ui/components/Breadcrumbs/Breadcrumbs";
-import { Title } from "../ui/components/Title/Title";
+import { request } from "../../lib";
 
 export const generateMetadata = async () => {
   return {

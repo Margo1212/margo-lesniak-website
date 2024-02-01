@@ -1,8 +1,8 @@
 import "@/ui/styles/globals.css";
+import { Footer } from "@components/Footer/Footer";
+import Navigation from "@components/Navigation/Navigation";
 import type { Metadata } from "next";
 import { Lato } from "next/font/google";
-import { Footer } from "./ui/components/Footer/Footer";
-import Navigation from "./ui/components/Navigation/Navigation";
 
 const lato = Lato({
   weight: ["100", "300", "400", "700"],
@@ -28,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="logo1.svg" sizes="any" />
+        <link rel="icon" href="logo-min.svg" sizes="any" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <script
           src="//code.tidio.co/ndiivhrmxqb1eqe8u6vaxnbevzj7a7ho.js"

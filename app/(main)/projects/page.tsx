@@ -1,8 +1,8 @@
+import { projects } from "@lib/projects";
+import { NextBreadcrumb } from "@ui/components/Breadcrumbs/Breadcrumbs";
+import { Title } from "@ui/components/Title/Title";
 import Image from "next/image";
 import Link from "next/link";
-import { projects } from "../lib/projects";
-import { NextBreadcrumb } from "../ui/components/Breadcrumbs/Breadcrumbs";
-import { Title } from "../ui/components/Title/Title";
 
 export default function Projects() {
   return (

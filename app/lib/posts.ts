@@ -1,7 +1,7 @@
 import { unstable_cache } from "next/cache";
 import qs from "qs";
 import { request } from ".";
-import { postReducer } from "../actions";
+import { postReducer } from "./utils/reducers";
 
 export const getPostBySlug = unstable_cache(
   async ({ slug }: any) => {

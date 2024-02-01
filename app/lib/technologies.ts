@@ -1,6 +1,6 @@
 import qs from "qs";
 import { request } from ".";
-import { techReducer } from "../actions";
+import { techReducer } from "./utils/reducers";
 
 export const getTechnologies = async () => {
   const queryParams = qs.stringify(

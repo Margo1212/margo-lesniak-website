@@ -11,7 +11,7 @@ export const Header = ({}: HeaderProps) => {
       <div className="w-full laptop:w-1/2 flex flex-col justify-center gap-y-10 laptop:gap-y-16">
         <div className="space-y-4 laptop:space-y-8 flex flex-col">
           <p className="text-primary text-center laptop:text-left text-xl font-semibold">
-            Cześć, jestem Margo
+            Cześć, jestem Margo 👾
           </p>
           <Title>
             Projektuję{" "}

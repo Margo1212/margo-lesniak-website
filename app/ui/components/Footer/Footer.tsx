@@ -24,7 +24,7 @@ export const Footer = () => {
           </li>
           <li>
             <Link aria-label="Link to gallery" href="/offer">
-              Oferta
+              Usługi
             </Link>
           </li>
           <li>
