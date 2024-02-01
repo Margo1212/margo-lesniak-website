@@ -32,7 +32,7 @@ export const FaqSection = ({ faq }: FaqSectionProps) => {
                 expandIcon={
                   <ExpandMoreIcon
                     fontSize="medium"
-                    sx={{ color: "#6F00FF", marginLeft: "2px" }}
+                    sx={{ color: "#8C33FF", marginLeft: "2px" }}
                   />
                 }
                 aria-controls="panel2a-content"

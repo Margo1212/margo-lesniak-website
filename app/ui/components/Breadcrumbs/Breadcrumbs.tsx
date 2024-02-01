@@ -30,7 +30,7 @@ export const NextBreadcrumb = ({
     <div className="bg-main-bg shadow-[5px_5px_9px_#131519,-5px_-5px_9px_#272d35] px-4 rounded-3xl hidden tablet:block">
       <ul className={containerClasses}>
         <li className={listClasses}>
-          <Link href={"/"} className="flex items-center">
+          <Link href={"/"} className="flex items-center hover:text-secondary">
             <svg
               className="w-4 h-4 mr-2"
               fill="currentColor"
@@ -46,7 +46,9 @@ export const NextBreadcrumb = ({
         {pathNames.map((link, index) => {
           let href = `/${pathNames.slice(0, index + 1).join("/")}`;
           let itemClasses =
-            paths === href ? `${listClasses} ${activeClasses}` : listClasses;
+            paths === href
+              ? `${listClasses} ${activeClasses} hover:text-secondary`
+              : listClasses;
           let itemLink = capitalizeLinks
             ? link[0].toUpperCase() + link.slice(1, link.length)
             : link;

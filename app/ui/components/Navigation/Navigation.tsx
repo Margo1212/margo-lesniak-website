@@ -13,7 +13,7 @@ const Navigation = () => {
       </div>
       <div className="laptop:hidden  flex items-center">
         <Link aria-label="Link to homepage" href="/">
-          <Image src="/logo-min.svg" alt="logo" width={75} height={50} />
+          <Image src="/logo-min.svg" alt="logo" width={50} height={50} />
         </Link>
       </div>
 

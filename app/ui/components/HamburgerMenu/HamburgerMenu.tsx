@@ -49,65 +49,74 @@ export default function HamburgerMenu() {
 
       <Drawer
         PaperProps={{
-          sx: { width: "40%" },
+          sx: { width: "100%", height: "50%" },
         }}
-        anchor="right"
+        anchor="top"
         open={state}
         onClose={toggleDrawer(false)}
       >
         <Box
           sx={{
             p: 2,
-            height: 1,
+            height: "100%",
 
             backgroundColor: "#1D2127",
-            opacity: "0.1",
           }}
         >
           <IconButton onClick={toggleDrawer(false)} sx={{ mb: 2 }}>
             <CloseIcon sx={{ color: "rgba(111, 0, 255, 1)" }} />
           </IconButton>
 
-          <Box sx={{ mb: 2, px: "10px" }}>
-            <ul className=" h-full text-white font-medium space-y-7 flex flex-col justify-center items-center">
-              <li>
-                <Link aria-label="Link to home" href="/">
-                  Strona Główna
-                </Link>
-              </li>
-              {/* <li>
-                <Link aria-label="Link to about page" href="/about">
-                  O mnie
-                </Link>
-              </li>*/}
-              <li>
-                <Link aria-label="Link to gallery" href="/services">
-                  Usługi
-                </Link>
-              </li>
-              <li>
-                <Link aria-label="Link to news page" href="/blog">
-                  Blog
-                </Link>
-              </li>
-              <li>
-                <Link aria-label="Link to news page" href="/projects">
-                  Projekty
-                </Link>
-              </li>
-              <li>
-                <Button
-                  styles="py-3 px-7"
-                  text="Skontaktuj się ze mną"
-                  bg="secondary"
-                  href="#"
-                />
-              </li>
-              <li>
-                <SocialMedia />
-              </li>
-            </ul>
-          </Box>
+          <ul className="h-3/4 text-white font-medium space-y-7 flex flex-col justify-between items-center">
+            <li>
+              <Link
+                className="hover:text-secondary focus:text-secondary focus:underline transition-colors duration-300 "
+                aria-label="Link to home"
+                href="/"
+              >
+                Strona Główna
+              </Link>
+            </li>
+
+            <li>
+              <Link
+                className="hover:text-secondary focus:text-secondary focus:underline transition-colors duration-300 "
+                aria-label="Link to gallery"
+                href="/services"
+              >
+                Usługi
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="hover:text-secondary focus:text-secondary focus:underline transition-colors duration-300 "
+                aria-label="Link to news page"
+                href="/blog"
+              >
+                Blog
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="hover:text-secondary focus:text-secondary focus:underline transition-colors duration-300 "
+                aria-label="Link to news page"
+                href="/projects"
+              >
+                Projekty
+              </Link>
+            </li>
+            <li>
+              <Button
+                styles="py-3 px-7"
+                text="Skontaktuj się ze mną"
+                bg="secondary"
+                href="/contact"
+              />
+            </li>
+            <li>
+              <SocialMedia />
+            </li>
+          </ul>
         </Box>
       </Drawer>
     </div>

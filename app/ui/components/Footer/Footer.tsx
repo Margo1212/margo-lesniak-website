@@ -5,8 +5,8 @@ export const Footer = () => {
   const now = new Date();
   const year = now.getFullYear();
   return (
-    <footer className="w-full  bg-main-bg px-5">
-      <div className="bg-main-bg shadow-[inset_5px_5px_9px_#131519,inset_-5px_-5px_9px_#272d35] m-auto rounded-t-3xl flex flex-col tablet:grid-cols-2 gap-x-5 laptop:gap-x-0 justify-between tablet:grid laptop:grid-cols-4 px-10 laptop:px-16 ">
+    <footer className="w-full   bg-main-bg px-5">
+      <div className="bg-main-bg shadow-[inset_5px_5px_9px_#131519,inset_-5px_-5px_9px_#272d35] m-auto rounded-t-3xl flex flex-col laptop:grid-cols-2 gap-x-5 laptop:gap-x-0 justify-between tablet:grid tablet:items-center px-10 laptop:px-16 ">
         <div className="flex flex-col gap-y-3 py-6">
           <SocialMedia />
         </div>

@@ -1,14 +1,14 @@
+import { PagesTitle } from "@/ui/components/PagesTitle/PagesTitle";
 import { projects } from "@lib/projects";
 import { NextBreadcrumb } from "@ui/components/Breadcrumbs/Breadcrumbs";
-import { Title } from "@ui/components/Title/Title";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Projects() {
   return (
     <>
-      <section className=" px-5 laptop:px-24 gap-3 pt-10 pb-32  space-y-10">
-        <Title>Projekty</Title>
+      <section className="px-5 laptop:px-0 gap-3 pt-10 pb-32  space-y-10">
+        <PagesTitle>Projekty</PagesTitle>
         <NextBreadcrumb
           homeElement={"Strona Główna"}
           separator={

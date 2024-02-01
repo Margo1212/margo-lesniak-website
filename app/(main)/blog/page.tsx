@@ -1,5 +1,5 @@
 import { NextBreadcrumb } from "@components/Breadcrumbs/Breadcrumbs";
-import { Title } from "@components/Title/Title";
+import { PagesTitle } from "@components/PagesTitle/PagesTitle";
 import { postReducer } from "@lib/utils/reducers";
 import Image from "next/image";
 import Link from "next/link";
@@ -46,8 +46,8 @@ export default async function Page() {
   const posts = await getPosts();
 
   return (
-    <section className=" px-5 laptop:px-24 gap-3 pt-10 pb-32 space-y-10">
-      <Title>Blog</Title>
+    <section className="px-5 laptop:px-0 gap-3 pt-10 pb-32 space-y-10">
+      <PagesTitle>Blog</PagesTitle>
       <NextBreadcrumb
         homeElement={"Strona Główna"}
         separator={

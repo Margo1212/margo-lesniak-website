@@ -1,8 +1,9 @@
 import { NextBreadcrumb } from "@components/Breadcrumbs/Breadcrumbs";
 import { ContactForm } from "@components/ContactForm/ContactForm";
-import { Title } from "@components/Title/Title";
+import { PagesTitle } from "@components/PagesTitle/PagesTitle";
 import ContactPhoneIcon from "@mui/icons-material/ContactPhone";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
+import Link from "next/link";
 
 export const generateMetadata = async () => {
   return {
@@ -26,8 +27,8 @@ export const generateMetadata = async () => {
 
 export default async function Page() {
   return (
-    <section className=" px-5 laptop:px-24 gap-3 pt-10 pb-32  space-y-10">
-      <Title>Skontaktuj się ze mną</Title>
+    <section className=" px-5 laptop:px-0 gap-3 pt-10 pb-32  space-y-10">
+      <PagesTitle>Skontaktuj się ze mną</PagesTitle>
       <NextBreadcrumb
         homeElement={"Strona Główna"}
         separator={
@@ -38,9 +39,9 @@ export default async function Page() {
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
-              fill-rule="evenodd"
+              fillRule="evenodd"
               d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-              clip-rule="evenodd"
+              clipRule="evenodd"
             ></path>
           </svg>
         }
@@ -49,14 +50,20 @@ export default async function Page() {
         listClasses="hover:underline mx-2 font-bold text-text"
         capitalizeLinks
       />
-      <div className="grid laptop:grid-cols-2 content-center items-center tablet:grid-cols-2 tablet:gap-x-12 grid-cols-1 desktop:gap-x-32 gap-y-14">
+      <div className="grid laptop:grid-cols-2 content-center items-center tablet:gap-x-12 grid-cols-1 desktop:gap-x-28 gap-y-14">
         <div className="flex flex-col gap-y-8 ">
           <p className="text-text">
             Cieszę się, że zainteresowałeś/aś się moimi usługami! Jeśli masz
             pytania, potrzebujesz dodatkowych informacji lub jesteś gotów/a
             rozpocząć współpracę, jestem tutaj, aby Ci pomóc. Skorzystaj z
-            poniższych danych kontaktowych lub wypełnij formularz, a ja postaram
-            się odpowiedzieć najszybciej, jak to możliwe.
+            poniższych danych kontaktowych lub{" "}
+            <Link
+              href="#contact-form"
+              className="text-primary laptop:text-text underline laptop:no-underline"
+            >
+              wypełnij formularz,
+            </Link>{" "}
+            a ja postaram się odpowiedzieć najszybciej, jak to możliwe.
           </p>
           <p className="flex gap-x-3 text-secondary/80">
             <MailOutlineIcon sx={{ color: "rgb(54 255 181 / 0.8)" }} />

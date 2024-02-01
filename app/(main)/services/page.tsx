@@ -2,7 +2,7 @@ import { getStages } from "@/lib/stages";
 import { StagesSection } from "@/ui/views/StagesSection";
 import { getTechnologies } from "@lib/technologies";
 import { NextBreadcrumb } from "@ui/components/Breadcrumbs/Breadcrumbs";
-import { Title } from "@ui/components/Title/Title";
+import { PagesTitle } from "@ui/components/PagesTitle/PagesTitle";
 import { TechnologiesSection } from "@ui/views/TechnologiesSection";
 
 export const generateMetadata = async () => {
@@ -29,8 +29,8 @@ export default async function Services() {
   const stagesData = await getStages();
   const technologies = technologiesData[0]?.tech;
   return (
-    <section className=" px-5 laptop:px-24 gap-3 pt-10 pb-32 space-y-10">
-      <Title>Usługi</Title>
+    <section className=" px-5 laptop:px-0 gap-3 pt-10 pb-32 space-y-10">
+      <PagesTitle>Usługi</PagesTitle>
       <NextBreadcrumb
         homeElement={"Strona Główna"}
         separator={

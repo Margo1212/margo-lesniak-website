@@ -10,7 +10,7 @@ export const SocialMedia = ({}: SocialMediaProps) => {
     <ul className={` space-x-5 flex justify-center items-center`}>
       <li>
         <Link
-          className="w-8 h-8 flex justify-center items-center  border-2 border-text text-text hover:border-primary hover:text-primary rounded-full"
+          className="w-8 h-8 flex justify-center items-center  border-2 border-text text-text hover:border-primary hover:text-primary rounded-full transition-colors duration-300"
           aria-label="Link to instagram"
           href={"https://www.instagram.com/art.lady_clinic/"}
           target="_blank"
@@ -24,7 +24,7 @@ export const SocialMedia = ({}: SocialMediaProps) => {
       </li>
       <li>
         <Link
-          className="w-8 h-8 flex justify-center items-center  border-2 border-text text-text hover:border-primary hover:text-primary rounded-full"
+          className="w-8 h-8 flex justify-center items-center  border-2 border-text text-text hover:border-primary hover:text-primary rounded-full transition-colors duration-300"
           aria-label="Link to booksy"
           href={
             "https://booksy.com/pl-pl/81163_art-lady_brwi-i-rzesy_8820_krakow#ba_s=sr_1"
@@ -41,7 +41,7 @@ export const SocialMedia = ({}: SocialMediaProps) => {
       </li>
       <li>
         <Link
-          className="w-8 h-8 flex justify-center items-center  border-2  border-text text-text hover:border-primary hover:text-primary rounded-full"
+          className="w-8 h-8 flex justify-center items-center  border-2  border-text text-text hover:border-primary hover:text-primary rounded-full transition-colors duration-300"
           aria-label="Link to instagram"
           href={"https://www.instagram.com/art.lady_clinic/"}
           target="_blank"

@@ -1,6 +1,6 @@
 import type { ComponentProps } from "react";
 
-type Props = ComponentProps<"h2"> & {
+type Props = ComponentProps<"h1"> & {
   children: (string | JSX.Element)[] | string | JSX.Element;
 };
 

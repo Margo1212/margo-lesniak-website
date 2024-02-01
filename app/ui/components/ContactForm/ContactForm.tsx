@@ -61,7 +61,11 @@ export const ContactForm = () => {
     },
   });
   return (
-    <form onSubmit={formik.handleSubmit} className="py-0 w-full space-y-5 mt-7">
+    <form
+      id="contact-form"
+      onSubmit={formik.handleSubmit}
+      className="py-0 w-full space-y-5 mt-7"
+    >
       <Input
         onChange={formik.handleChange}
         type="text"
@@ -142,7 +146,7 @@ export const ContactForm = () => {
       />
 
       <button
-        className={`bg-primary py-2 px-4 w-full text-white text-center tracking-wide transition ease-in-out duration-300 shadow-md rounded-full font-semibold `}
+        className={`bg-gradient-to-b from-[#8C33FF] to-[#37007E]  py-2 px-4 w-full text-white text-center tracking-wide transition ease-in-out duration-300 shadow-md rounded-full font-semibold `}
       >
         Wyślij
       </button>
