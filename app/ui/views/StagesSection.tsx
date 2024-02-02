@@ -43,7 +43,7 @@ export const StagesSection = ({ stages }: { stages: any[] }) => {
                 </TimelineDot>
                 <TimelineConnector />
               </TimelineSeparator>
-              <TimelineContent className=" px-4 py-6 space-y-6 rounded-3xl shadow-[inset_5px_5px_9px_#131519,inset_-5px_-5px_9px_#272d35]">
+              <TimelineContent className=" px-4 py-10 space-y-6 rounded-3xl shadow-[inset_5px_5px_9px_#131519,inset_-5px_-5px_9px_#272d35]">
                 <p className="text-3xl text-left font-extrabold text-primary/30">
                   {stage.stageNumber}
                 </p>
