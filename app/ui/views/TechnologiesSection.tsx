@@ -8,7 +8,7 @@ export const TechnologiesSection = ({
   return (
     <section className="space-y-8">
       <h4 className="text-white font-bold text-2xl">Narzędzia i technologie</h4>
-      <p className="text-text w-1/2 ">
+      <p className="text-text w-full laptop:w-1/2 ">
         W swojej pracy wykorzystuję najnowsze technologie i narzędzia, które
         pozwalają mi tworzyć strony internetowe i aplikacje internetowe wydajne,
         zoptymalizowane pod kątem SEO i przyjazne dla użytkownika.

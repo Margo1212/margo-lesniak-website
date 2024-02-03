@@ -1,4 +1,5 @@
 import { getStages } from "@/lib/stages";
+import { OfferSection } from "@/ui/views/OfferSection";
 import { StagesSection } from "@/ui/views/StagesSection";
 import { getTechnologies } from "@lib/technologies";
 import { NextBreadcrumb } from "@ui/components/Breadcrumbs/Breadcrumbs";
@@ -48,6 +49,7 @@ export default async function Services() {
         listClasses="hover:underline mx-2 font-bold text-text"
         capitalizeLinks
       />
+      <OfferSection />
       <TechnologiesSection technologies={technologies} />
       <StagesSection stages={stagesData} />
     </section>

@@ -7,7 +7,7 @@ import Link from "next/link";
 export default function Projects() {
   return (
     <>
-      <section className="px-5 laptop:px-0 gap-3 pt-10 pb-32  space-y-10">
+      <section className="px-5 laptop:px-0 gap-3 pt-10 pb-32 space-y-10">
         <PagesTitle>Projekty</PagesTitle>
         <NextBreadcrumb
           homeElement={"Strona Główna"}
@@ -35,7 +35,7 @@ export default function Projects() {
             <Link
               href={project.url}
               target="_blank"
-              className="p-5 w-full shadow-[5px_5px_9px_#131519,-5px_-5px_9px_#272d35] hover:bg-[#282930]/30 duration-200 rounded-3xl text-white min-h-[350px]"
+              className="p-5 hover:-translate-y-3 w-full shadow-[5px_5px_9px_#131519,-5px_-5px_9px_#272d35] hover:bg-[#282930]/30 duration-200 rounded-3xl text-white min-h-[350px]"
               key={project.id}
             >
               <div>

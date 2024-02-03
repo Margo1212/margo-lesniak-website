@@ -14,8 +14,8 @@ export const StagesSection = ({ stages }: { stages: any[] }) => {
   const size = useResizeHook();
   return (
     <section className="space-y-8">
-      <h4 className="text-white font-bold text-3xl">Etapy współpracy</h4>
-      <p className="text-text w-1/2">
+      <h3 className="text-white font-bold text-3xl">Etapy współpracy</h3>
+      <p className="text-text  w-full laptop:w-1/2 ">
         Nasza współpraca to płynny proces, zaplanowany w kilku kluczowych
         etapach. Od pierwszego kontaktu po finalne dostosowanie, każdy etap jest
         starannie kierowany, aby zapewnić Ci najwyższą jakość usług.
@@ -30,6 +30,7 @@ export const StagesSection = ({ stages }: { stages: any[] }) => {
                   [`& .${timelineItemClasses.root}:before`]: {
                     flex: 0,
                     padding: 0,
+                    margin: 0,
                   },
                 }
               : null
