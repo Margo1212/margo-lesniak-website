@@ -10,8 +10,48 @@ const lato = Lato({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.margolesniak.pl/"),
   title: "Margo Lesniak | Strony internetowe",
-  description: "",
+  description:
+    "Nowoczesne strony internetowe w harmonii z Twoimi oczekiwaniami",
+
+  // added new keywords for seo
+  keywords: [
+    "Next.js",
+    "React",
+    "Strapi TypeScript",
+    "Nowoczesne strony internetowe",
+    "Responsywne projektowanie stron",
+    "cms",
+    "web development",
+    "Zoptymalizowane strony dla SEO",
+  ],
+  authors: [
+    {
+      name: "Margo Leśniak",
+      url: "https://github.com/Margo1212",
+    },
+  ],
+  creator: "Margo Leśniak",
+
+  openGraph: {
+    type: "website",
+    locale: "pl_PL",
+    url: "https://www.margolesniak.pl/",
+    title: "Margo Leśniak | Strony internetowe",
+    description:
+      "Nowoczesne strony internetowe w harmonii z Twoimi oczekiwaniami",
+    images: [`./og-image.png`],
+    siteName: "margolesniak.pl",
+  },
+  // twitter: {
+  //   handle: "@MargoLeśniak",
+  //   site: "@MargoLeśniak",
+  //   cardType: "summary_large_image",
+  // },
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 /**
