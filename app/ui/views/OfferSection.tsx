@@ -18,7 +18,7 @@ export const OfferSection = ({ offers }: any) => {
         nie tylko zgodne z najnowszymi standardami, ale także oferowały
         wyjątkowe doświadczenia użytkownika.
       </p>
-      <div className="grid grid-cols-3 gap-16 py-20">
+      <div className="grid grid-cols-1 desktop:grid-cols-3 tablet:grid-cols-2 gap-16 py-20">
         {offers.map((offer: any) => (
           <div key={offer.id} className=" flex flex-col gap-y-3">
             <h4 className="text-white text-2xl font-bold">{offer.title}</h4>
