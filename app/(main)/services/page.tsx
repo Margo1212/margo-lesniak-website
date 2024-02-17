@@ -1,3 +1,4 @@
+import { getOffers } from "@/lib/offers";
 import { getStages } from "@/lib/stages";
 import { OfferSection } from "@/ui/views/OfferSection";
 import { StagesSection } from "@/ui/views/StagesSection";
@@ -28,7 +29,9 @@ export const generateMetadata = async () => {
 export default async function Services() {
   const technologiesData = await getTechnologies();
   const stagesData = await getStages();
+  const offersData = await getOffers();
   const technologies = technologiesData[0]?.tech;
+
   return (
     <section className=" px-5 laptop:px-0 gap-3 pt-10 pb-32 space-y-10">
       <PagesTitle>Usługi</PagesTitle>
@@ -49,7 +52,7 @@ export default async function Services() {
         listClasses="hover:underline mx-2 font-bold text-text"
         capitalizeLinks
       />
-      <OfferSection />
+      <OfferSection offers={offersData} />
       <TechnologiesSection technologies={technologies} />
       <StagesSection stages={stagesData} />
     </section>
