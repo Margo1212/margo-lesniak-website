@@ -2,7 +2,7 @@
 
 import { useResizeHook } from "@/lib/utils/useResizeHook";
 import AutoAwesomeIcon from "@mui/icons-material/AutoAwesome";
-import { timelineItemClasses } from "@mui/lab";
+import { timelineContentClasses, timelineItemClasses } from "@mui/lab";
 import Timeline from "@mui/lab/Timeline/Timeline";
 import TimelineConnector from "@mui/lab/TimelineConnector/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent/TimelineContent";
@@ -44,7 +44,15 @@ export const StagesSection = ({ stages }: { stages: any[] }) => {
                 </TimelineDot>
                 <TimelineConnector />
               </TimelineSeparator>
-              <TimelineContent className="px-4 py-10 space-y-6 rounded-3xl shadow-[inset_5px_5px_9px_#131519,inset_-5px_-5px_9px_#272d35]">
+              <TimelineContent
+                sx={{
+                  [`& .${timelineContentClasses.root}:before`]: {
+                    paddingX: 4,
+                    paddingY: 10,
+                  },
+                }}
+                className="px-4 py-10 space-y-6 rounded-3xl shadow-[inset_5px_5px_9px_#131519,inset_-5px_-5px_9px_#272d35]"
+              >
                 <p className="text-5xl text-left font-bold text-primary/20">
                   {stage.stageNumber}
                 </p>
