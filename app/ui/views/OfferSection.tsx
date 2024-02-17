@@ -7,7 +7,6 @@ export type Offer = {
 };
 
 export const OfferSection = ({ offers }: any) => {
-  console.log(offers);
   return (
     <div suppressHydrationWarning={true} className="flex flex-col gap-y-4">
       <h3 className="text-white text-4xl">Oferta</h3>

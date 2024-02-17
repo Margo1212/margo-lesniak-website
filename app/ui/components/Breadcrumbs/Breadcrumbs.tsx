@@ -23,9 +23,10 @@ export const NextBreadcrumb = ({
   capitalizeLinks,
 }: TBreadCrumbProps) => {
   const paths = usePathname();
+  console.log(paths);
 
   const pathNames = paths.split("/").filter((path) => path);
-
+  console.log(pathNames);
   return (
     <div className="bg-main-bg shadow-[5px_5px_9px_#131519,-5px_-5px_9px_#272d35] px-4 rounded-3xl hidden tablet:block">
       <ul className={containerClasses}>

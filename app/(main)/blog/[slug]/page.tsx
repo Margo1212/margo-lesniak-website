@@ -1,6 +1,7 @@
 import { request } from "@/lib";
 import { postReducer } from "@/lib/utils/reducers";
 import { getPostBySlug } from "@lib/posts";
+import { BlocksRenderer } from "@strapi/blocks-react-renderer";
 import Image from "next/image";
 import qs from "qs";
 
@@ -63,25 +64,9 @@ export default async function Page({ params }: { params: { slug: string } }) {
             {post.description}
           </p>
         </div>
-        {post.textblock?.map((text: any) =>
-          text.type === "heading" ? (
-            <div key={text.id}>
-              {text.children.map((p: any) => (
-                <h4 key={p.id} className="font-medium text-white text-xl">
-                  {p.text}
-                </h4>
-              ))}
-            </div>
-          ) : (
-            <div key={text.id}>
-              {text.children.map((p: any) => (
-                <p className="font-normal text-text text-base" key={p.id}>
-                  {p.text}
-                </p>
-              ))}
-            </div>
-          )
-        )}
+        <div className="prose prose-lg prose-headings:text-xl prose-strong:text-secondary prose-headings:text-white  text-lg text-text">
+          <BlocksRenderer content={post?.textblock} />
+        </div>
       </div>
       <div className="laptop:w-2/5 h-1/2 w-full px-10 py-5 flex justify-center">
         {post.image?.data !== null ? (
