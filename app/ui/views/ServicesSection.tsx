@@ -46,7 +46,7 @@ export const ServicesSection = () => {
           <ul className="list-image-[url(/star.svg)] space-y-4 list-inside text-base">
             <li>
               Konfiguracja i dostosowywanie systemów zarządzania treścią (CMS),
-              np. Strapi CMS, umożliwiających łatwe zarządzanie treścią strony.
+              umożliwiających łatwe zarządzanie treścią strony.
             </li>
             <li>
               Integracja niestandardowych rozwiązań dla lepszej funkcjonalności.

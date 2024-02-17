@@ -14,7 +14,7 @@ export const StagesSection = ({ stages }: { stages: any[] }) => {
   const size = useResizeHook();
   return (
     <section className="space-y-8">
-      <h3 className="text-white font-bold text-3xl">Etapy współpracy</h3>
+      <h3 className="text-white text-4xl">Etapy współpracy</h3>
       <p className="text-text  w-full laptop:w-1/2 ">
         Nasza współpraca to płynny proces, zaplanowany w kilku kluczowych
         etapach. Od pierwszego kontaktu po finalne dostosowanie, każdy etap jest
@@ -44,12 +44,12 @@ export const StagesSection = ({ stages }: { stages: any[] }) => {
                 </TimelineDot>
                 <TimelineConnector />
               </TimelineSeparator>
-              <TimelineContent className=" px-4 py-10 space-y-6 rounded-3xl shadow-[inset_5px_5px_9px_#131519,inset_-5px_-5px_9px_#272d35]">
-                <p className="text-3xl text-left font-extrabold text-primary/30">
+              <TimelineContent className="px-4 py-10 space-y-6 rounded-3xl shadow-[inset_5px_5px_9px_#131519,inset_-5px_-5px_9px_#272d35]">
+                <p className="text-5xl text-left font-bold text-primary/20">
                   {stage.stageNumber}
                 </p>
                 <div className="flex flex-col gap-y-5">
-                  <h4 className="text-left text-secondary text-xl">
+                  <h4 className="text-left text-secondary text-2xl">
                     {stage.title}
                   </h4>
                   {stage.description.map((text: any) => (

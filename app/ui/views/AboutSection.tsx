@@ -23,9 +23,7 @@ export const AboutSection = () => {
           fascynacją i zapałem poznaje tajniki tworzenia nowoczesnych i
           innowacyjnych stron internetowych. Uczę się sztuki web developmentu od
           dwóch lat, a każdy dzień spędzony nad kodem to dla mnie okazja do
-          odkrywania nowych możliwości. Przez ten czas zdobyłam doświadczenie w
-          pracy z zaawansowanymi narzędziami, takimi jak Strapi CMS, Next.js,
-          React oraz Typescript. Stawiam na kreatywność i funkcjonalność,
+          odkrywania nowych możliwości. Stawiam na kreatywność i funkcjonalność,
           starając się tworzyć strony, które nie tylko są przyjemne wizualnie,
           ale także są intuicyjne i przyjazne dla użytkownika. Zapraszam do
           zapoznania się z moją pracą i do odkrywania, jak technologia może stać
