@@ -1,11 +1,7 @@
 "use client";
 import dynamic from "next/dynamic";
-const Box = dynamic(() => import("@mui/material/Box"), {
-  loading: () => <p>Loading...</p>,
-});
-const Drawer = dynamic(() => import("@mui/material/Drawer"), {
-  loading: () => <p>Loading...</p>,
-});
+const Box = dynamic(() => import("@mui/material/Box"));
+const Drawer = dynamic(() => import("@mui/material/Drawer"));
 
 import * as React from "react";
 
@@ -14,7 +10,6 @@ import MenuIcon from "@mui/icons-material/Menu";
 import { IconButton } from "@mui/material";
 import Link from "next/link";
 import { useState } from "react";
-import { Button } from "../Button/Button";
 import { SocialMedia } from "../SocialMedia/SocialMedia";
 
 export default function HamburgerMenu() {
@@ -73,6 +68,7 @@ export default function HamburgerMenu() {
                 className="hover:text-secondary focus:text-secondary focus:underline transition-colors duration-300 "
                 aria-label="Link to home"
                 href="/"
+                onClick={toggleDrawer(false)}
               >
                 Strona Główna
               </Link>
@@ -83,6 +79,7 @@ export default function HamburgerMenu() {
                 className="hover:text-secondary focus:text-secondary focus:underline transition-colors duration-300 "
                 aria-label="Link to gallery"
                 href="/services"
+                onClick={toggleDrawer(false)}
               >
                 Usługi
               </Link>
@@ -92,6 +89,7 @@ export default function HamburgerMenu() {
                 className="hover:text-secondary focus:text-secondary focus:underline transition-colors duration-300 "
                 aria-label="Link to news page"
                 href="/blog"
+                onClick={toggleDrawer(false)}
               >
                 Blog
               </Link>
@@ -101,17 +99,19 @@ export default function HamburgerMenu() {
                 className="hover:text-secondary focus:text-secondary focus:underline transition-colors duration-300 "
                 aria-label="Link to news page"
                 href="/projects"
+                onClick={toggleDrawer(false)}
               >
                 Projekty
               </Link>
             </li>
             <li>
-              <Button
-                styles="py-3 px-7"
-                text="Skontaktuj się ze mną"
-                bg="secondary"
+              <Link
+                className="py-3 px-7  bg-gradient-to-b from-[#05A66B] to-[#008253] text-white text-center tracking-wide transition ease-in-out duration-300 hover:scale-105 shadow-md rounded-full font-semibold"
                 href="/contact"
-              />
+                onClick={toggleDrawer(false)}
+              >
+                Skontaktuj się ze mną
+              </Link>
             </li>
             <li>
               <SocialMedia />

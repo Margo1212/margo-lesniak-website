@@ -27,7 +27,7 @@ export const Button = ({
     <Link
       href={href}
       target={target}
-      className={`${background} text-white text-center tracking-wide transition ease-in-out duration-300 shadow-md rounded-full font-semibold ${styles} hover:scale-105`}
+      className={`${background} text-white text-center tracking-wide transition ease-in-out duration-300 hover:scale-105 shadow-md rounded-full font-semibold ${styles} hover:scale-105`}
     >
       {text}
       {icon}
