@@ -1,8 +1,8 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
-import { hasCookie, setCookie } from "cookies-next";
 import CookieOutlinedIcon from "@mui/icons-material/CookieOutlined";
+import { hasCookie, setCookie } from "cookies-next";
+import { useEffect, useState } from "react";
 
 const CookieConsent = () => {
   const [showConsent, setShowConsent] = useState(true);
@@ -21,19 +21,16 @@ const CookieConsent = () => {
   }
 
   return (
-    <div className="fixed w-full z-50 ">
-      <div
-        data-aos="fade-up"
-        className="fixed bottom-0  bg-white border-[1.5px] rounded-lg w-full border-dark-blue flex items-center justify-between gap-x-5 px-4 py-2 laptop:py-4"
-      >
-        <CookieOutlinedIcon fontSize="large" sx={{ color: "#001144" }} />
-        <span className="text-dark text-xs tablet:text-sm laptop:text-base my-5 laptop:my-5">
+    <div className="relative w-full z-50 flex justify-center">
+      <div className="fixed bottom-5 rounded-3xl shadow-[5px_5px_9px_#131519,-5px_-5px_9px_#272d35]  bg-main-bg w-2/3 flex items-center justify-between gap-x-5 px-4 py-2 laptop:py-4">
+        <CookieOutlinedIcon fontSize="large" sx={{ color: "#36FFB5" }} />
+        <span className="text-white text-xs tablet:text-sm laptop:text-base my-5 laptop:my-5">
           Używamy plików cookie na naszej stronie internetowej, aby zapewnić Ci
           najbardziej odpowiednie preferencje. Klikając „Akceptuj”, wyrażasz
           zgodę na użycie plików cookie.
         </span>
         <button
-          className="bg-dark-blue py-2 laptop:px-8 px-4 text-xs tablet:text-sm laptop:text-base rounded text-white"
+          className="bg-primary py-2 transition ease-in-out duration-300 hover:scale-105 laptop:px-8 px-4 text-sm tablet:text-sm laptop:text-base rounded-3xl text-white font-semibold"
           onClick={() => acceptCookie()}
         >
           Akceptuj

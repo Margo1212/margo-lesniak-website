@@ -1,3 +1,4 @@
+import CookieConsent from "@/ui/components/Cookies/Cookies";
 import "@/ui/styles/globals.css";
 import { Footer } from "@components/Footer/Footer";
 import Navigation from "@components/Navigation/Navigation";
@@ -78,6 +79,7 @@ export default function RootLayout({
       <body
         className={`px-2 tablet:px-5 laptop:px-12 desktop:px-40 bg-main-bg ${lato.className}`}
       >
+        <CookieConsent />
         <Navigation />
         {children}
         <Footer />
