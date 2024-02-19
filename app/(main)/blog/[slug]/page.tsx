@@ -68,9 +68,10 @@ export default async function Page({ params }: { params: { slug: string } }) {
           <BlocksRenderer content={post?.textblock} />
         </div>
       </div>
-      <div className="laptop:w-2/5 h-1/2 w-full px-10 py-5 flex justify-center">
+      <div className="laptop:w-2/5 h-1/2 w-full px-10 py-5  flex justify-center">
         {post.image?.data !== null ? (
           <Image
+            className="rounded-3xl"
             src={post?.image?.data[0]?.attributes?.url}
             alt={post?.image?.data[0]?.attributes?.alternativeText}
             width={post?.image?.data[0]?.attributes?.width}
