@@ -33,7 +33,7 @@ export const WhyMe = () => {
           implementację interaktywnych i atrakcyjnych funkcji na stronie.
         </p>
       </div>
-      <div className="shadow-[inset_5px_5px_9px_#131519,inset_-5px_-5px_9px_#272d35] rounded-lg space-y-3 px-6 py-5">
+      <div className="shadow-[inset_5px_5px_9px_#131519,inset_-5px_-5px_9px_#272d35] rounded-lg  space-y-3 px-6 py-5">
         <MdOutlineSettingsSuggest
           style={{ fontSize: "36px", color: "#8C33FF" }}
         />
@@ -45,7 +45,7 @@ export const WhyMe = () => {
           zapewniając elastyczność i efektywność działania.
         </p>
       </div>
-      <div className="shadow-[inset_5px_5px_9px_#131519,inset_-5px_-5px_9px_#272d35] rounded-lg px-6 space-y-3 py-5">
+      <div className="shadow-[inset_5px_5px_9px_#131519,inset_-5px_-5px_9px_#272d35] rounded-lg  px-6 space-y-3 py-5">
         <FaPiggyBank style={{ fontSize: "36px", color: "#8C33FF" }} />
         <h6 className="text-white font-semibold text-lg">
           Elastyczność Budżetowa:
