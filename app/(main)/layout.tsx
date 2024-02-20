@@ -73,13 +73,13 @@ export default function RootLayout({
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta name="google-adsense-account" content="ca-pub-3187267560803211" />
         <script
-          src="//code.tidio.co/ndiivhrmxqb1eqe8u6vaxnbevzj7a7ho.js"
-          async
-        ></script>
-        <script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3187267560803211"
           crossOrigin="anonymous"
+        ></script>
+        <script
+          src="//code.tidio.co/ndiivhrmxqb1eqe8u6vaxnbevzj7a7ho.js"
+          async
         ></script>
       </head>
       <body
