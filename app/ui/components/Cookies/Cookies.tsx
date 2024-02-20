@@ -21,8 +21,8 @@ const CookieConsent = () => {
   }
 
   return (
-    <div className="relative w-full z-50 flex justify-center">
-      <div className="fixed bottom-5 rounded-3xl shadow-[5px_5px_9px_#131519,-5px_-5px_9px_#272d35]  bg-main-bg w-full mb-28 tablet:w-2/3 flex items-center justify-between gap-x-5 px-4 py-2 laptop:py-4">
+    <div className="relative w-full z-50 flex justify-start">
+      <div className="fixed bottom-44 tablet:bottom-5 rounded-3xl shadow-[5px_5px_9px_#131519,-5px_-5px_9px_#272d35]  bg-main-bg w-full tablet:w-[60%] mb-30 flex items-center justify-between gap-x-5 px-4 py-2 laptop:py-4">
         <CookieOutlinedIcon fontSize="large" sx={{ color: "#36FFB5" }} />
         <span className="text-white text-xs tablet:text-sm laptop:text-base my-5 laptop:my-5">
           Używamy plików cookie na naszej stronie internetowej, aby zapewnić Ci
