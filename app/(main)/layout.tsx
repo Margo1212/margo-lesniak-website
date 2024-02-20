@@ -76,6 +76,11 @@ export default function RootLayout({
           src="//code.tidio.co/ndiivhrmxqb1eqe8u6vaxnbevzj7a7ho.js"
           async
         ></script>
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3187267560803211"
+          crossOrigin="anonymous"
+        ></script>
       </head>
       <body
         className={`px-2 tablet:px-5 laptop:px-12 desktop:px-40 bg-main-bg ${lato.className}`}
