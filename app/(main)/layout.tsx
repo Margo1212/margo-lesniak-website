@@ -71,6 +71,7 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="logo-min.svg" sizes="any" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta name="google-adsense-account" content="ca-pub-3187267560803211" />
         <script
           src="//code.tidio.co/ndiivhrmxqb1eqe8u6vaxnbevzj7a7ho.js"
           async
