@@ -25,6 +25,9 @@ export const metadata: Metadata = {
     "Responsywne projektowanie stron",
     "cms",
     "web development",
+    "strony internetowe kraków",
+    "strony www w krakowie",
+    "projektowanie stron www",
     "Zoptymalizowane strony dla SEO",
   ],
   authors: [

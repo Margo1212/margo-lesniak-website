@@ -41,7 +41,7 @@ export const SocialMedia = ({}: SocialMediaProps) => {
         <Link
           className="w-8 h-8 flex justify-center items-center  border-2  border-text text-text hover:border-primary hover:text-primary rounded-full transition-colors duration-300"
           aria-label="Link to instagram"
-          href={""}
+          href={"https://www.instagram.com/margolesniak_webdev/"}
           target="_blank"
         >
           <InstagramIcon
